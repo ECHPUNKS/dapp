@@ -23,7 +23,7 @@
             <a href="/" class="rounded mr-3 ml-3" style="text-decoration: none;letter-spacing: 2px !important;">
                 <!-- <h4 style="font-family:Cyberverse;" class="p-0"> -->
                 <h4 style="" class="p-0">
-                    <span style="color: #BA83FC;">ECH</span><span style="color: white;">Punks</span>
+                    <span style="color: #BA83FC;">ECH</span><span style="color: white;">Punks Minter</span>
                 </h4>
             </a>
             <!-- Sidebar Toggle-->
@@ -90,7 +90,7 @@
                             <div class="card-body text-center p-1" id="">
                                 <button class="enableEthereumButton btn btn-sm btn-primary border border-primary" id="buttonmeta"
                                     type="button">
-                                    Connect Wallet
+                                    CONNECT WALLET
                                 </button>
                             </div>
                         </div>
@@ -98,21 +98,34 @@
                         <div class="card bg-secondary rounded border-dark text-white mb-2">
                             <div class="card-body text-center pt-0" id="">
                                 <img id="image_display" class="img-fluid rounded mt-2 p-5" style="width:350px" src="./../assets/images/logos/logo2.png" alt="image">
-                                <p hidden class="mt-0" id="current_mint_card">#<span id="current_mint_number"></span>/1000</p>
                             </div>
                         </div>
-                        
+                        <div hidden class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
+                            <div class="card-body text-center pt-0" id="">
+                                <h6>CURRENTLY MINTING</h6>
+                                <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2>
+                                <div class="col-12">
+                                    <div id="">
+                                        <p>
+                                            <b>COST:</b><br>
+                                            <span id="current_price"></span> ECH<br>
+                                            25,000,000 ECHP
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="col-md-6">
                         <div class="row" id="mint_row">
                             <div class="col-12">
+
+                                
+
                                 <div id="row_accordion2">
                                     <div class="card bg-secondary rounded border-dark text-white mb-2">
                                         <div id="headingOne3" style="background-color:#3E4145;">
-                                            <div class="card-title text-center" style="background-color: #3E4145 !important; cursor: pointer;">
-                                                <b class="ml-2 mb-0">Mint</b>
-                                            </div>
                                         </div>
                                         <div>
                                             <div class="card-body text-center" style="">
@@ -120,14 +133,23 @@
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div id="">
-                                                                <button disabled id="mint_button" onclick="publicMint()" class="btn btn-primary">Mint</button>
+                                                                <button disabled id="mint_button" onclick="publicMint()" class="btn btn-primary">MINT</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div hidden class="row mt-3" id="approve_button">
                                                         <div class="col-12">
                                                             <div id="approve_button_div">
-                                                                <button id="approve_button" onclick="approve_account()" class="btn btn-primary">Approve</button>
+                                                                <button id="approve_button" onclick="approve_account()" class="btn btn-primary">APPROVE</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div hidden class="row" id="prices_div">
+                                                        <div class="col-12">
+                                                            <div id="">
+                                                                <p>Cost</p>
+                                                                <p>ECH: <span id="current_price"></span></p>
+                                                                <p>ECHP: 25,000,000</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -136,12 +158,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div id="row_accordion1">
                                     <div class="card bg-secondary rounded border-dark text-white mb-2">
                                         <div id="headingOne3"
                                             style="background-color:#3E4145;">
                                             <div class="card-title text-center" style="background-color: #3E4145 !important; cursor: pointer;">
-                                                <b class="ml-2 mb-0">My ECHPunks</b>
+                                                <b class="ml-2 mb-0">MY ECHPUNKS</b>
                                             </div>
                                         </div>
                                         <div>

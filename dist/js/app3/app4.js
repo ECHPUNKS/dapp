@@ -44,6 +44,20 @@ async function getAccount() {
         console.log('is approved for ' + parseInt(isApproved))
 
 
+        document.getElementById('nft_info_card').hidden = false
+
+
+
+
+        if (totalSupply >= 30) {
+            document.getElementById('current_price').innerHTML = ".04" 
+        } else if (totalSupply >= 20) {
+            document.getElementById('current_price').innerHTML = ".03"
+        } else if (totalSupply >= 10) {
+            document.getElementById('current_price').innerHTML = ".02"
+        } else {
+            document.getElementById('current_price').innerHTML = ".01"
+        }
         
         
         document.getElementById('current_mint_card').hidden = false
@@ -68,7 +82,7 @@ async function getAccount() {
                 $(
                     "<div class='col-4'>" +
                     "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + (parseInt(i) + 1).toString() + ".png'>" +
-                    "<p>#" + (i+1) + "</p>" +
+                    "<p>#" + tokensByOwner[i] + "</p>" +
                     "</div>"
                 ).appendTo('#myPunks');
             }

@@ -45,9 +45,12 @@ const findPrice = () => {
 console.log('Current Price in ECH = ' + findPrice())
 
 function publicMint() {
-    console.log('supply for price:: ' + totalSupplyForPrice)
+    console.log('supply for price:: ' + typeof(totalSupplyForPrice))
 
-    ECHPUNKS_NFT_Contract.methods.mint(totalSupplyForPrice).send({from: currentAccount, value: findPrice()})
+ECHPUNKS_NFT_Contract.methods.mint((parseInt(totalSupplyForPrice)+1).toString()).send({from: currentAccount, value: findPrice()})
+
+
+
 
     .on('transactionHash', tx => {
         console.log("Transaction: ", tx);

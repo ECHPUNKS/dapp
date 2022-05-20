@@ -110,7 +110,7 @@ async function getAccount() {
     }
 }
 
-ECHPUNKS_NFT_Contract.events.Transfer({fromBlock: "latest"}).on("connected", function (subscriptionId) {
+ECHPUNKS_NFT_Contract.events.NFTMinted({fromBlock: "latest"}).on("connected", function (subscriptionId) {
     console.log('callback')
     console.log(subscriptionId);
     

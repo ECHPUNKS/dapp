@@ -1,0 +1,38 @@
+{
+  "dna": "c326f5c273cd954ec8d6f79447893b5c",
+  "name": "ECHPunks NFT's #186",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/186.png",
+  "date": 1652893990681,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "silver"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Glance"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "SnackBack Hat"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Gold Teeth V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Dance-Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Neck"
+    }
+  ],
+  "compiler": "mintables.club"
+}

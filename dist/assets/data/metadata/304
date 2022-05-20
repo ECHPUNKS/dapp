@@ -1,0 +1,38 @@
+{
+  "dna": "60980bcff168cf7ffabf6896b6df628f",
+  "name": "ECHPunks NFT's #304",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/304.png",
+  "date": 1652894168505,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Angry"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Chuckle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Cow Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Joint"
+    }
+  ],
+  "compiler": "mintables.club"
+}

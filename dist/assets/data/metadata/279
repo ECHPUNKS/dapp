@@ -1,0 +1,38 @@
+{
+  "dna": "184e1d319b42da8d070aea3f85eb79e5",
+  "name": "ECHPunks NFT's #279",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/279.png",
+  "date": 1652894120092,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Stay Up Late"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Docker"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Not Bad"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Skate Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Cigarettes"
+    }
+  ],
+  "compiler": "mintables.club"
+}

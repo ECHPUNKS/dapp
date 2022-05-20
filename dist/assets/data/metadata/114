@@ -1,0 +1,38 @@
+{
+  "dna": "ab926ea3b047cdf0dbacf50eead3b106",
+  "name": "ECHPunks NFT's #114",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/114.png",
+  "date": 1652893924449,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "body",
+      "value": "gold"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Stare"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Bucket Hat"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Belittle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Garage Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Multiple Earrings"
+    }
+  ],
+  "compiler": "mintables.club"
+}

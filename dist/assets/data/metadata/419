@@ -1,0 +1,38 @@
+{
+  "dna": "c140c9769625d6bc57238d697d428707",
+  "name": "ECHPunks NFT's #419",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/419.png",
+  "date": 1652894334522,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "silver"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Disgusting"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spike Cap"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Belittle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Ska Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Hanging Spikes"
+    }
+  ],
+  "compiler": "mintables.club"
+}

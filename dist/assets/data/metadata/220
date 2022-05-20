@@ -1,0 +1,38 @@
+{
+  "dna": "26c5516e212d603015fad9aece621703",
+  "name": "ECHPunks NFT's #220",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/220.png",
+  "date": 1652894038884,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 2"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "SnackBack Hat"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Gold Teeth V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Horror Punk and Deathrock"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Spider"
+    }
+  ],
+  "compiler": "mintables.club"
+}

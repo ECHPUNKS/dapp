@@ -1,0 +1,38 @@
+{
+  "dna": "ed08d43fc044f8b8231aee249242d31f",
+  "name": "ECHPunks NFT's #334",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/334.png",
+  "date": 1652894206688,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 5"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Vetements"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Tongue Out"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Dark Cabaret And Gypsy Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Multiple Earrings"
+    }
+  ],
+  "compiler": "mintables.club"
+}

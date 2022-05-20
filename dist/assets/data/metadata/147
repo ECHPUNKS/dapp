@@ -1,0 +1,38 @@
+{
+  "dna": "3787de2b680016e319f4db65a5514b11",
+  "name": "ECHPunks NFT's #147",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/147.png",
+  "date": 1652893954625,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Glance"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Tongue Out"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Cow Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Bubble Gum"
+    }
+  ],
+  "compiler": "mintables.club"
+}

@@ -1,0 +1,38 @@
+{
+  "dna": "93088cf638a362aeac3617bf55f440ed",
+  "name": "ECHPunks NFT's #73",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/73.png",
+  "date": 1652893858950,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 2"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Stare"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Brunette"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Belittle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Phsychobilly"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Joint"
+    }
+  ],
+  "compiler": "mintables.club"
+}

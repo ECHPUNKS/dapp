@@ -1,0 +1,38 @@
+{
+  "dna": "6690ccc307952754f16484dc84a72579",
+  "name": "ECHPunks NFT's #58",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/58.png",
+  "date": 1652893842807,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "body",
+      "value": "gold"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Stay Up Late"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Docker"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Smirk"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Cow Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Spider"
+    }
+  ],
+  "compiler": "mintables.club"
+}

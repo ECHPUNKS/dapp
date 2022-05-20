@@ -1,0 +1,38 @@
+{
+  "dna": "c41db385df294e85f7dcc334c41b5a4a",
+  "name": "ECHPunks NFT's #153",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/153.png",
+  "date": 1652893957350,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "body",
+      "value": "gold"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Disgusting"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Alternatice colors"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Chuckle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Garage Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Spider"
+    }
+  ],
+  "compiler": "mintables.club"
+}

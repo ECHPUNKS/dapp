@@ -1,0 +1,38 @@
+{
+  "dna": "97208fcd53a7cfd61a521efde5ee4560",
+  "name": "ECHPunks NFT's #297",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/297.png",
+  "date": 1652894150119,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Gold Glasses"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Docker"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Lipstick V2"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Horror Punk and Deathrock"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Bubble Gum"
+    }
+  ],
+  "compiler": "mintables.club"
+}

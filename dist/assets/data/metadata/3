@@ -1,0 +1,38 @@
+{
+  "dna": "fea49dd008338292b9590b7f0bd9a888",
+  "name": "ECHPunks NFT's #3",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/3.png",
+  "date": 1652893781258,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Brunette"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Chuckle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Horror Punk and Deathrock"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Joint"
+    }
+  ],
+  "compiler": "mintables.club"
+}

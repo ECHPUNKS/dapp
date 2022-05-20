@@ -1,0 +1,38 @@
+{
+  "dna": "f4d6d099109555f15d55ac375f5509d2",
+  "name": "ECHPunks NFT's #152",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/152.png",
+  "date": 1652893956928,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Bit Glasses"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Mohawk"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Lipstick V2"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Crust punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Pipe"
+    }
+  ],
+  "compiler": "mintables.club"
+}

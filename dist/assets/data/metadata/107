@@ -1,0 +1,38 @@
+{
+  "dna": "af28ec30a1f6334ae1cafb22c21ab3fb",
+  "name": "ECHPunks NFT's #107",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/107.png",
+  "date": 1652893921461,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Gold Glasses"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Lipstick V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Crust punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Joint"
+    }
+  ],
+  "compiler": "mintables.club"
+}

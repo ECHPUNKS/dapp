@@ -1,0 +1,38 @@
+{
+  "dna": "a9bd5bfc46ff5ecd48d7b552da774dbf",
+  "name": "ECHPunks NFT's #113",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/113.png",
+  "date": 1652893924022,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Glance"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Grin"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Dark Cabaret And Gypsy Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Bubble Gum"
+    }
+  ],
+  "compiler": "mintables.club"
+}

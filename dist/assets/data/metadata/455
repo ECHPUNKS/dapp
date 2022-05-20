@@ -1,0 +1,38 @@
+{
+  "dna": "9e9fe08fc99a237e8e2a788a78d7f36a",
+  "name": "ECHPunks NFT's #455",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/455.png",
+  "date": 1652894394296,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 1"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spike Cap"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Gold Teeth V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Skate Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Spider"
+    }
+  ],
+  "compiler": "mintables.club"
+}

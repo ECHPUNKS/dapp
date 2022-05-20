@@ -1,0 +1,38 @@
+{
+  "dna": "4737ebc22790e2d64917bee4b1bcb02d",
+  "name": "ECHPunks NFT's #46",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/46.png",
+  "date": 1652893837175,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Bit Glasses"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Lipstick V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Anarcho-Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Pipe"
+    }
+  ],
+  "compiler": "mintables.club"
+}

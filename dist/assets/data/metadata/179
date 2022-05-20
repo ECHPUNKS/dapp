@@ -1,0 +1,38 @@
+{
+  "dna": "d0efc7272756bb09b70e9c6795dd8794",
+  "name": "ECHPunks NFT's #179",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/179.png",
+  "date": 1652893978070,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "body",
+      "value": "gold"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Stare"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Docker"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Lipstick V2"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Droog"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Face Tattoos"
+    }
+  ],
+  "compiler": "mintables.club"
+}

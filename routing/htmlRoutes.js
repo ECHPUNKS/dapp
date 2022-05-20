@@ -14,5 +14,8 @@ router.get('/minter', (__, res) => {
 router.get('/', (__, res) => {
     res.sendFile(path.join(__dirname, '/../dist/html/index.html'));
 });
+router.get('/stats', (__, res) => {
+    res.sendFile(path.join(__dirname, '/../dist/html/stats.html'));
+});
 
 

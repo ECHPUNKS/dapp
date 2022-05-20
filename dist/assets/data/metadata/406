@@ -1,0 +1,38 @@
+{
+  "dna": "511908bd34f7fd9c068f0cabb105487c",
+  "name": "ECHPunks NFT's #406",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/406.png",
+  "date": 1652894322048,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "body",
+      "value": "dark"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Glance"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Brunette"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Chuckle"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Phsychobilly"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Pipe"
+    }
+  ],
+  "compiler": "mintables.club"
+}

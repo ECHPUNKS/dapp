@@ -1,0 +1,38 @@
+{
+  "dna": "9056585b9f699f8a1ecdf7dac89f45b8",
+  "name": "ECHPunks NFT's #91",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/91.png",
+  "date": 1652893876743,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 1"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Angry"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Gold Teeth V2"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Dark Cabaret And Gypsy Punk"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Face Tattoos"
+    }
+  ],
+  "compiler": "mintables.club"
+}

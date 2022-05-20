@@ -1,0 +1,38 @@
+{
+  "dna": "926d162b3021443fa3bce8acf9e9f010",
+  "name": "ECHPunks NFT's #215",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/215.png",
+  "date": 1652894020589,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Background 3"
+    },
+    {
+      "trait_type": "body",
+      "value": "silver"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Angry"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Grin"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Droog"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Laser Eyes"
+    }
+  ],
+  "compiler": "mintables.club"
+}

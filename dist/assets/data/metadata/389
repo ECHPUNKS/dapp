@@ -1,0 +1,38 @@
+{
+  "dna": "ffe2b1f40fb3bb41822ab47248fc4aae",
+  "name": "ECHPunks NFT's #389",
+  "description": "Randomly Generated Profile Picture NFT Avatars",
+  "image": "REPLACE-THIS-WITH-YOUR-URL/389.png",
+  "date": 1652894293353,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "body",
+      "value": "light"
+    },
+    {
+      "trait_type": "eyes/glasses",
+      "value": "Disgusting"
+    },
+    {
+      "trait_type": "hair/hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "Gold Teeth V1"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "Street Punk And Oi"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "Laser Eyes"
+    }
+  ],
+  "compiler": "mintables.club"
+}

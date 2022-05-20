@@ -75,10 +75,13 @@ async function getAccount() {
         }
         
         console.log('_tokensByOwner::  ' + tokensByOwner.length)
+        document.getElementById('my_echpunks_div').hidden = false
+
         if (tokensByOwner.length >= 1) {
             // document.getElementById('punksDisplay').innerHTML = tokensByOwner
             document.getElementById('myPunks').innerHTML = "";
             for (i = 0; i <tokensByOwner.length; i++) {
+                
                 $(
                     "<div class='col-4'>" +
                     "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + (parseInt(i) + 1).toString() + ".png'>" +
@@ -140,3 +143,14 @@ const getImage = (currentMint) => {
     return
 }
 
+async function bestFetch(metadataNumber) {
+    try {
+        const first = await fetch('./../../assets/data/metadata/' + metadataNumber.toString()); // <-- wait for the fetch to finish and return the resolved value.
+        let json = await first.json(); // <-- use the const first, not first_name
+        console.log(json.dna);
+        return json;
+
+    } catch (e) {
+        console.log('Error!', e);
+    }
+}

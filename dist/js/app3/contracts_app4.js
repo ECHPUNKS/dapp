@@ -6,6 +6,6 @@ const ECHP_address_abi = JSON.parse('[{"inputs":[],"stateMutability":"nonpayable
 const ECHP_Contract = new web3Instance.eth.Contract(ECHP_address_abi, ECHP_address);
 
 // ECHPUNKS_NFT Contract
-const ECHPUNKS_NFT_address = '0x6355967c972851D241a814b5b78a6B3422EDeF6a';
+const ECHPUNKS_NFT_address = '0x2e72b832911911BccF4EE5FCA56840a3fC851531';
 const ECHPUNKS_NFT_address_abi = abi;
 const ECHPUNKS_NFT_Contract = new web3Instance.eth.Contract(ECHPUNKS_NFT_address_abi, ECHPUNKS_NFT_address);

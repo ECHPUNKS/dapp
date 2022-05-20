@@ -1,14 +1,14 @@
 
 let totalSupplyForPrice;
-
-console.log('supply for price ' + totalSupplyForPrice)
+// console.log('supply for price:: ' + totalSupplyForPrice)
 
 
 function approve_account() {
     ECHP_Contract.methods.approve(ECHPUNKS_NFT_address, "100000000000000000000000000").send({from: currentAccount})
     .on('transactionHash', tx => {
         // disableButtons()
-        document.getElementById('approve_button').disabled = true;
+        document.getElementById('approve_button_button').disabled = true;
+
     })
     .then(receipt => {
         // console.log('Mined', receipt)
@@ -17,7 +17,8 @@ function approve_account() {
             getAccount()
         }
         else {
-            document.getElementById('approve_button').disabled = false;
+            document.getElementById('approve_button_button').disabled = false;
+
         }
     })
     .catch(err => {
@@ -41,10 +42,12 @@ const findPrice = () => {
     }
 }
 
-console.log('Current Price in ECH = '+findPrice())
+console.log('Current Price in ECH = ' + findPrice())
 
 function publicMint() {
-    ECHPUNKS_NFT_Contract.methods.mint().send({from: currentAccount, value: findPrice()})
+    console.log('supply for price:: ' + totalSupplyForPrice)
+
+    ECHPUNKS_NFT_Contract.methods.mint(totalSupplyForPrice).send({from: currentAccount, value: findPrice()})
 
     .on('transactionHash', tx => {
         console.log("Transaction: ", tx);
@@ -57,6 +60,7 @@ function publicMint() {
     })
     .catch(err => {
         console.log('Error', err)
+        getAccount()
     })
     .finally(() => {
         console.log('is this returning?')

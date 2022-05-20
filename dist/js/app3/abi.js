@@ -322,7 +322,13 @@ const abi = [
         "stateMutability": "view",
         "type": "function"
     }, {
-        "inputs": [],
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "nftNumber",
+                "type": "uint256"
+            }
+        ],
         "name": "mint",
         "outputs": [
             {

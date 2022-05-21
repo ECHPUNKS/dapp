@@ -49,11 +49,10 @@ async function getAccount() {
         // console.log(myTokensArray)
         document.getElementById('buy_echp_div').hidden = false;
 
-
-        for (i = 0; i < myTokensArray.length; i ++) {
-            bestFetch(i)
-        }
-        // console.log('mymetadata  ',MyMetadataArray)
+        // if (tokensByOwner.length > 0) {
+            for (i = 0; i < myTokensArray.length; i ++) {
+                bestFetch(i)
+            }
     })
     showAccount.innerHTML = "<p>Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
 
@@ -71,24 +70,28 @@ const loadMetadata = () => {
 document.getElementById('button_column').hidden = true;
 
 // console.log('length ',myTokensArray.length)
+    if (myTokensArray.length > 0) {
+    
+        for(i=0; i<myTokensArray.length; i++) {
+            $(
+                "<div class='col-12 col-md-4'>" +
+                    "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + myTokensArray[i] + ".png'>" +
 
-    for(i=0; i<myTokensArray.length; i++) {
-        $(
-            "<div class='col-12 col-md-4'>" +
-                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + myTokensArray[i] + ".png'>" +
-
-                // "<p>#" + myTokensArray[i] + "</p>" +
-                "<p>" + MyMetadataArray[i].name + "</p>" +
-                "<p>Background: " + MyMetadataArray[i].attributes[0].value + "</p>" +
-                "<p>Skin: " + MyMetadataArray[i].attributes[1].value + "</p>" +
-                "<p>Eyes: " + MyMetadataArray[i].attributes[2].value + "</p>" +
-                "<p>Hair/Hat: " + MyMetadataArray[i].attributes[3].value + "</p>" +
-                "<p>Mouth: " + MyMetadataArray[i].attributes[4].value + "</p>" +
-                "<p>Outfit: " + MyMetadataArray[i].attributes[5].value + "</p>" +
-                "<p>Accessory: " + MyMetadataArray[i].attributes[6].value + "</p>" +
-                "<p>- - -</p>" +
-            "</div>"
-        ).appendTo('#myPunks');
+                    // "<p>#" + myTokensArray[i] + "</p>" +
+                    "<p>" + MyMetadataArray[i].name + "</p>" +
+                    "<p>Background: " + MyMetadataArray[i].attributes[0].value + "</p>" +
+                    "<p>Skin: " + MyMetadataArray[i].attributes[1].value + "</p>" +
+                    "<p>Eyes: " + MyMetadataArray[i].attributes[2].value + "</p>" +
+                    "<p>Hair/Hat: " + MyMetadataArray[i].attributes[3].value + "</p>" +
+                    "<p>Mouth: " + MyMetadataArray[i].attributes[4].value + "</p>" +
+                    "<p>Outfit: " + MyMetadataArray[i].attributes[5].value + "</p>" +
+                    "<p>Accessory: " + MyMetadataArray[i].attributes[6].value + "</p>" +
+                    "<p>- - -</p>" +
+                "</div>"
+            ).appendTo('#myPunks');
+        }
+    } else {
+        document.getElementById('myPunks').innerHTML = "You do not own any ECHPunks!"
     }
 }
 
@@ -98,7 +101,8 @@ async function bestFetch(i) {
         const first = await fetch('./../../assets/data/metadata/' + myTokensArray[i]); // <-- wait for the fetch to finish and return the resolved value.
 
         let json = await first.json(); // <-- use the const first, not first_name
-        MyMetadataArray.push(json)
+        MyMetadataArray[i] = json
+        console.log(i, MyMetadataArray[i])
 
         // console.log(first);
     } catch (e) {

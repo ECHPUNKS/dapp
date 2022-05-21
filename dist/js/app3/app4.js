@@ -4,18 +4,18 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 
 ethereumButton.addEventListener('click', () => {
     document.getElementById('enableMeta').hidden = true
-    console.log('getting account')
+    // console.log('getting account')
     getAccount()
 })
 let currentAccount = ""
 async function getAccount() {
     const network = await web3Instance.eth.net.getId()
-    console.log(network)
+    // console.log(network)
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
     const account = accounts[0]
-    console.log('account: ', account)
+    // console.log('account: ', account)
     currentAccount = account
-    console.log('currentAccount: ', currentAccount)
+    // console.log('currentAccount: ', currentAccount)
 
     const balance = await window.ethereum
         .request({
@@ -38,16 +38,9 @@ async function getAccount() {
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
         document.getElementById('ECHP_Balance').innerHTML = "<p>ECHP Balance<br>" + readECHPBalance + "</p>"
 
-
-
-
-        console.log('is approved for ' + parseInt(isApproved))
-
-
+        document.getElementById('buy_echp_div').hidden = false;
         document.getElementById('nft_info_card').hidden = false
-
-
-
+        // console.log('is approved for ' + parseInt(isApproved))
 
         if (totalSupply >= 30) {
             document.getElementById('current_price').innerHTML = ".04" 
@@ -63,7 +56,7 @@ async function getAccount() {
         document.getElementById('current_mint_card').hidden = false
         document.getElementById('current_mint_number').innerHTML = parseInt(totalSupply) + 1
         
-        console.log('totalsupply::  ' + totalSupply)
+        // console.log('totalsupply::  ' + totalSupply)
         totalSupplyForPrice = totalSupply;
 
         getImage(parseInt(totalSupply))
@@ -74,7 +67,7 @@ async function getAccount() {
             
         }
         
-        console.log('_tokensByOwner::  ' + tokensByOwner.length)
+        // console.log('_tokensByOwner::  ' + tokensByOwner.length)
         document.getElementById('my_echpunks_div').hidden = false
 
         if (tokensByOwner.length >= 1) {
@@ -114,13 +107,13 @@ async function getAccount() {
 }
 
 ECHPUNKS_NFT_Contract.events.NFTMinted({fromBlock: "latest"}).on("connected", function (subscriptionId) {
-    console.log('callback')
-    console.log(subscriptionId);
+    // console.log('callback')
+    // console.log(subscriptionId);
     
     return;
 }).on('data', function (event) {
-    console.log('data')
-    console.log(event); // same results as the optional callback above
+    // console.log('data')
+    // console.log(event); // same results as the optional callback above
     getAccount()
     return
     // }
@@ -137,8 +130,8 @@ const enableButtons = () => {
 }
 
 const getImage = (currentMint) => {
-    console.log(typeof(currentMint))
-    console.log(currentMint)
+    // console.log(typeof(currentMint))
+    // console.log(currentMint)
     $('#image_display').attr("src", "./../../assets/images/testpunks/" + (parseInt(currentMint)+1).toString() + ".png")
     return
 }
@@ -147,7 +140,7 @@ async function bestFetch(metadataNumber) {
     try {
         const first = await fetch('./../../assets/data/metadata/' + metadataNumber.toString()); // <-- wait for the fetch to finish and return the resolved value.
         let json = await first.json(); // <-- use the const first, not first_name
-        console.log(json.dna);
+        // console.log(json.dna);
         return json;
 
     } catch (e) {

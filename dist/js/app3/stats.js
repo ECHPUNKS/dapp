@@ -47,7 +47,8 @@ async function getAccount() {
         document.getElementById('ECHP_Balance').innerHTML = "<p>ECHP Balance<br>" + readECHPBalance + "</p>"
         myTokensArray = tokensByOwner
         // console.log(myTokensArray)
-            
+        document.getElementById('buy_echp_div').hidden = false;
+
 
         for (i = 0; i < myTokensArray.length; i ++) {
             bestFetch(i)
@@ -69,7 +70,7 @@ async function getAccount() {
 const loadMetadata = () => {
 document.getElementById('button_column').hidden = true;
 
-console.log('length ',myTokensArray.length)
+// console.log('length ',myTokensArray.length)
 
     for(i=0; i<myTokensArray.length; i++) {
         $(
@@ -99,7 +100,7 @@ async function bestFetch(i) {
         let json = await first.json(); // <-- use the const first, not first_name
         MyMetadataArray.push(json)
 
-        console.log(first);
+        // console.log(first);
     } catch (e) {
         console.log('Error!', e);
     }

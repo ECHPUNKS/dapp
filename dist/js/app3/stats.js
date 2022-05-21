@@ -4,10 +4,10 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 
 ethereumButton.addEventListener('click', () => {
     document.getElementById('enableMeta').hidden = true
-document.getElementById('load_button_div').hidden = false
+    document.getElementById('load_button_div').hidden = false
 
 
-    console.log('getting account')
+    // console.log('getting account')
     getAccount()
 })
 let currentAccount = ""
@@ -16,10 +16,10 @@ let myTokensArray = {}
 let MyMetadataArray = []
 async function getAccount() {
     const network = await web3Instance.eth.net.getId()
-    console.log(network)
+    // console.log(network)
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
     const account = accounts[0]
-    console.log('account: ', account)
+    // console.log('account: ', account)
     currentAccount = account
     console.log('currentAccount: ', currentAccount)
 
@@ -46,47 +46,13 @@ async function getAccount() {
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
         document.getElementById('ECHP_Balance').innerHTML = "<p>ECHP Balance<br>" + readECHPBalance + "</p>"
         myTokensArray = tokensByOwner
-        console.log(myTokensArray)
+        // console.log(myTokensArray)
             
 
         for (i = 0; i < myTokensArray.length; i ++) {
-            fetch('./../../assets/data/metadata/' + myTokensArray[i]).then(response => {
-
-                return response.json();
-            }).then(data => {
-                // document.getElementById("demo").innerHTML = data;
-                MyMetadataArray.push(data)
-                console.log(data);
-            }).catch(err => { // Do something for an error here
-            });
+            bestFetch(i)
         }
-
-// document.getElementById('load_button_div').hidden = false;
-// document.getElementById('connect_button_div').hidden = true;
-
-
-
-
-        // }
-        
-        // console.log('_tokensByOwner::  ' + tokensByOwner.length)
-        // if (tokensByOwner.length >= 1) {
-        //     // document.getElementById('punksDisplay').innerHTML = tokensByOwner
-        //     document.getElementById('myPunks').innerHTML = "";
-        //     for (i = 0; i <tokensByOwner.length; i++) {
-                
-        //         $(
-        //             "<div class='col-4'>" +
-        //             "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + (parseInt(i) + 1).toString() + ".png'>" +
-        //             "<p>#" + tokensByOwner[i] + "</p>" +
-        //             "</div>"
-        //         ).appendTo('#myPunks');
-        //     }
-        // } else {
-        //     document.getElementById('myPunks').innerHTML = "You don't own any ECHPunks"
-        // }
-    // loadMetadata()
-    console.log('mymetadata  ',MyMetadataArray)
+        // console.log('mymetadata  ',MyMetadataArray)
     })
     showAccount.innerHTML = "<p>Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
 
@@ -126,47 +92,14 @@ console.log('length ',myTokensArray.length)
 }
 
 
-
-
-
-
-ECHPUNKS_NFT_Contract.events.NFTMinted({fromBlock: "latest"}).on("connected", function (subscriptionId) {
-    console.log('callback')
-    console.log(subscriptionId);
-    
-    return;
-}).on('data', function (event) {
-    console.log('data')
-    console.log(event); // same results as the optional callback above
-    getAccount()
-    return
-    // }
-}).on('changed', function (event) {
-    // remove event from local database
-}).on('error', function (error, receipt) { // If the
-});
-
-const disableButtons = () => {
-    document.getElementById('mint_button').disabled = true;
-}
-const enableButtons = () => {
-    document.getElementById('mint_button').disabled = false;
-}
-
-const getImage = (currentMint) => {
-    console.log(typeof(currentMint))
-    console.log(currentMint)
-    $('#image_display').attr("src", "./../../assets/images/testpunks/" + (parseInt(currentMint)+1).toString() + ".png")
-    return
-}
-
-async function bestFetch(metadataNumber) {
+async function bestFetch(i) {
     try {
-        const first = await fetch('./../../assets/data/metadata/' + metadataNumber.toString()); // <-- wait for the fetch to finish and return the resolved value.
-        let json = await first.json(); // <-- use the const first, not first_name
-        console.log(json.dna);
-        return json;
+        const first = await fetch('./../../assets/data/metadata/' + myTokensArray[i]); // <-- wait for the fetch to finish and return the resolved value.
 
+        let json = await first.json(); // <-- use the const first, not first_name
+        MyMetadataArray.push(json)
+
+        console.log(first);
     } catch (e) {
         console.log('Error!', e);
     }

@@ -1,37 +1,37 @@
 {
-  "dna": "42543e0d328e1c95d1058fb0d5fbfb11",
-  "name": "ECHPunks NFT's #480",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/480.png",
-  "date": 1652894439530,
+  "dna": "cfc9236bea030973f725f3be7ba80ec2",
+  "name": "ECHPunk #480",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/480.png",
+  "date": 1653143203919,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Grin"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Ska Punk"
-    },
-    {
-      "trait_type": "accessories",
+      "trait_type": "Accessories",
       "value": "Joint"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
   ],
   "compiler": "mintables.club"

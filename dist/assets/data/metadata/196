@@ -1,38 +1,37 @@
 {
-  "dna": "4a13f91dd3e60cd359c1c9eb490e7af3",
-  "name": "ECHPunks NFT's #196",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/196.png",
-  "date": 1652893994877,
+  "dna": "f6084b7b96b31852a7a3901210f033c7",
+  "name": "ECHPunk #196",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/196.png",
+  "date": 1653142935452,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Rainbow"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Alternatice colors"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "mouth",
-      "value": "Belittle"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "outfits",
+      "trait_type": "Outfit",
       "value": "Phsychobilly"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Spider"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

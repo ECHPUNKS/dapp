@@ -1,38 +1,37 @@
 {
-  "dna": "2c533df0cdef9e73337bcd7ae755af83",
-  "name": "ECHPunks NFT's #127",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/127.png",
-  "date": 1652893938391,
+  "dna": "31ab5ba6e27bd738026a47f3b78b441f",
+  "name": "ECHPunk #127",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/127.png",
+  "date": 1653142842331,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Heavy Metal"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Docker"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Smirk"
+      "trait_type": "Mouth",
+      "value": "Not Bad"
     },
     {
-      "trait_type": "outfits",
-      "value": "Horror Punk and Deathrock"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

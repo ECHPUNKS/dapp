@@ -1,0 +1,38 @@
+{
+  "dna": "4e946bafb15587102b58b0591849db8c",
+  "name": "ECHPunk #934",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://QmPZtd4JTeTXL3aoRHxjyqLkmU7PfK5vVg42M2iHeagyAm/934.png",
+  "date": 1653143627062,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
+      "value": "Bit Glasses"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Tongue Out"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Bubble Gum"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Phsychobilly"
+    }
+  ],
+  "compiler": "mintables.club"
+}

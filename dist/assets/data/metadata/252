@@ -1,38 +1,37 @@
 {
-  "dna": "8dcbcf4b55008bf0ce7c4e2808581257",
-  "name": "ECHPunks NFT's #252",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/252.png",
-  "date": 1652894081517,
+  "dna": "0a76a9eda32c9d3a1f83d527946cd582",
+  "name": "ECHPunk #252",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/252.png",
+  "date": 1653143003590,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Background 3"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Beanie"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Street Punk And Oi"
+      "trait_type": "Accessories",
+      "value": "Bubble Gum"
     },
     {
-      "trait_type": "accessories",
-      "value": "Bubble Gum"
+      "trait_type": "Outfit",
+      "value": "Phsychobilly"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

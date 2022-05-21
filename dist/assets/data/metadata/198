@@ -1,38 +1,37 @@
 {
-  "dna": "cb303e877fe2c8a4eee8eb4edd22e831",
-  "name": "ECHPunks NFT's #198",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/198.png",
-  "date": 1652893995787,
+  "dna": "a40c58c166071ace4bee5b4828a5a274",
+  "name": "ECHPunk #198",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/198.png",
+  "date": 1653142936618,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Heavy Metal"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Spikey"
+      "trait_type": "Eyes/Glasses",
+      "value": "Bit Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Belittle"
+      "trait_type": "Mouth",
+      "value": "Tongue Out"
     },
     {
-      "trait_type": "outfits",
-      "value": "Cow Punk"
+      "trait_type": "Accessories",
+      "value": "Pipe"
     },
     {
-      "trait_type": "accessories",
-      "value": "Bubble Gum"
+      "trait_type": "Outfit",
+      "value": "Horror Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

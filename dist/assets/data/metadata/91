@@ -1,38 +1,37 @@
 {
-  "dna": "9056585b9f699f8a1ecdf7dac89f45b8",
-  "name": "ECHPunks NFT's #91",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/91.png",
-  "date": 1652893876743,
+  "dna": "f648fa5ce58af803ca70e5e361a2a43b",
+  "name": "ECHPunk #91",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/91.png",
+  "date": 1653142787614,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 1"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
+      "trait_type": "Hair/Hat",
+      "value": "Beanie"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V2"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "outfits",
-      "value": "Dark Cabaret And Gypsy Punk"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Horror Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

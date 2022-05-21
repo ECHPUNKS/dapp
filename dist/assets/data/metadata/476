@@ -1,37 +1,37 @@
 {
-  "dna": "6e2efa823caa06b3e1fd7a96e13b167e",
-  "name": "ECHPunks NFT's #476",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/476.png",
-  "date": 1652894424885,
+  "dna": "1015b5c60ea4d1ca74c5dc9f180593b7",
+  "name": "ECHPunk #476",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/476.png",
+  "date": 1653143202138,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Disgusting"
+      "trait_type": "Hair/Hat",
+      "value": "Beanie"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Bucket Hat"
+      "trait_type": "Eyes/Glasses",
+      "value": "Steampunk"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Dance-Punk"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Dance Punk"
     }
   ],
   "compiler": "mintables.club"

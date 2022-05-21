@@ -1,37 +1,37 @@
 {
-  "dna": "b3be2ebb21d67ae30edbe8b9d610f6d0",
-  "name": "ECHPunks NFT's #352",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/352.png",
-  "date": 1652894236076,
+  "dna": "a7a368032edd14f23feb912341613a73",
+  "name": "ECHPunk #352",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/352.png",
+  "date": 1653143095071,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Tongue Out"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "outfits",
-      "value": "Skate Punk"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Outfit",
+      "value": "Cow Punk"
     }
   ],
   "compiler": "mintables.club"

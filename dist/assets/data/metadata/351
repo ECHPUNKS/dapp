@@ -1,37 +1,37 @@
 {
-  "dna": "a2018e64544605415d85c7c221c54b25",
-  "name": "ECHPunks NFT's #351",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/351.png",
-  "date": 1652894235427,
+  "dna": "573875bbea22c40d94adc4ae6e482b20",
+  "name": "ECHPunk #351",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/351.png",
+  "date": 1653143094645,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 4"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Vetements"
+      "trait_type": "Hair/Hat",
+      "value": "Spikey"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Mouth",
+      "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Droog"
+      "trait_type": "Accessories",
+      "value": "Spider Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Outfit",
+      "value": "Gypsy Punk"
     }
   ],
   "compiler": "mintables.club"

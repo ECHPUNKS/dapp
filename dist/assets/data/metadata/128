@@ -1,38 +1,37 @@
 {
-  "dna": "95f3ca7f21025f9bfb6a03ba8ece7393",
-  "name": "ECHPunks NFT's #128",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/128.png",
-  "date": 1652893938773,
+  "dna": "2630a5670d894be1f56580f61428723e",
+  "name": "ECHPunk #128",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/128.png",
+  "date": 1653142843398,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 2"
+      "trait_type": "Background",
+      "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Bucket Hat"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Stay Up Late"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Spike Cap"
+      "trait_type": "Mouth",
+      "value": "Gold Teeth V1"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Accessories",
+      "value": "Cigarette"
     },
     {
-      "trait_type": "outfits",
-      "value": "Horror Punk and Deathrock"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Garage Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

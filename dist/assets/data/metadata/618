@@ -1,0 +1,38 @@
+{
+  "dna": "33ba8c5a9f210473da03aa343a541433",
+  "name": "ECHPunk #618",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://QmPZtd4JTeTXL3aoRHxjyqLkmU7PfK5vVg42M2iHeagyAm/618.png",
+  "date": 1653143339337,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Dark"
+    },
+    {
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Grin"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Spider Earing"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Gypsy Punk"
+    }
+  ],
+  "compiler": "mintables.club"
+}

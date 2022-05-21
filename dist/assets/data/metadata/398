@@ -1,37 +1,37 @@
 {
-  "dna": "1ebf6000e9a28a94e78f2e93507f33ed",
-  "name": "ECHPunks NFT's #398",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/398.png",
-  "date": 1652894302306,
+  "dna": "0760caf5d6f242f31b5f157cb2c51384",
+  "name": "ECHPunk #398",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/398.png",
+  "date": 1653143115592,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Disgusting"
-    },
-    {
-      "trait_type": "hair/hat",
+      "trait_type": "Hair/Hat",
       "value": "Spikey"
     },
     {
-      "trait_type": "mouth",
-      "value": "Not Bad"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "outfits",
-      "value": "Celtic Punk"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Phsychobilly"
     }
   ],
   "compiler": "mintables.club"

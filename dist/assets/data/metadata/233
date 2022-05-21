@@ -1,38 +1,37 @@
 {
-  "dna": "843cb18c295c62e61c90d8fe409c871b",
-  "name": "ECHPunks NFT's #233",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/233.png",
-  "date": 1652894051262,
+  "dna": "22963505ed7d530636a16c03f0622fb7",
+  "name": "ECHPunk #233",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/233.png",
+  "date": 1653142974727,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Blue"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Vetements"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Spikey"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "mouth",
-      "value": "Belittle"
+      "trait_type": "Accessories",
+      "value": "Bubble Gum"
     },
     {
-      "trait_type": "outfits",
-      "value": "Garage Punk"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Outfit",
+      "value": "Droog"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

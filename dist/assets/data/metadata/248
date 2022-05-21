@@ -1,38 +1,37 @@
 {
-  "dna": "c7072fb035fb29b0e267158efd1655b1",
-  "name": "ECHPunks NFT's #248",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/248.png",
-  "date": 1652894077482,
+  "dna": "9380e1a0bbd89523c76257ae8880ae94",
+  "name": "ECHPunk #248",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/248.png",
+  "date": 1653142982245,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Steampunk"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Spike Cap"
+      "trait_type": "Eyes/Glasses",
+      "value": "Angry"
     },
     {
-      "trait_type": "mouth",
-      "value": "Chuckle"
+      "trait_type": "Mouth",
+      "value": "Not Bad"
     },
     {
-      "trait_type": "outfits",
-      "value": "Dance-Punk"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Laser Eyes"
+      "trait_type": "Outfit",
+      "value": "Anarcho Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

@@ -1,38 +1,37 @@
 {
-  "dna": "f63ac0368013e38f7d4e5a2ec72fd3e7",
-  "name": "ECHPunks NFT's #239",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/239.png",
-  "date": 1652894057569,
+  "dna": "74cb853acd7f2c3bdee1aeb434ce9d73",
+  "name": "ECHPunk #239",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/239.png",
+  "date": 1653142977590,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Bit Glasses"
+      "trait_type": "Hair/Hat",
+      "value": "Beanie"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Brunette"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stay Up Late"
     },
     {
-      "trait_type": "mouth",
-      "value": "Not Bad"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "outfits",
-      "value": "Crust punk"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "accessories",
-      "value": "Laser Eyes"
+      "trait_type": "Outfit",
+      "value": "Garage Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

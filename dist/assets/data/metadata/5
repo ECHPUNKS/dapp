@@ -1,38 +1,37 @@
 {
-  "dna": "1c567c77536bca5e61c49897be42a085",
-  "name": "ECHPunks NFT's #5",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/5.png",
-  "date": 1652893782213,
+  "dna": "e947e72cef4ac231eb6b5453d02c64c7",
+  "name": "ECHPunk #5",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/5.png",
+  "date": 1653142667512,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Blue"
+      "trait_type": "Background",
+      "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
+      "trait_type": "Hair/Hat",
+      "value": "Rainbow"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Beanie"
+      "trait_type": "Eyes/Glasses",
+      "value": "Angry"
     },
     {
-      "trait_type": "mouth",
-      "value": "Not Bad"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Phsychobilly"
+      "trait_type": "Accessories",
+      "value": "Multiple Earrings"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

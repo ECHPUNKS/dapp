@@ -1,37 +1,37 @@
 {
-  "dna": "cb2ca13575538d485d66995ce648bb95",
-  "name": "ECHPunks NFT's #363",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/363.png",
-  "date": 1652894256015,
+  "dna": "922453ddf4682dfc2a4cd172658e8d11",
+  "name": "ECHPunk #363",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/363.png",
+  "date": 1653143100051,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V2"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "outfits",
-      "value": "Ska Punk"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Gypsy Punk"
     }
   ],
   "compiler": "mintables.club"

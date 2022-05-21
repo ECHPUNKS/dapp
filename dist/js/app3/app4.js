@@ -23,33 +23,41 @@ async function getAccount() {
             params: [account, "latest"]
         })
     const read = parseInt(balance) / 10 ** 18
-    let _totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance;
+    let _totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable;
     // _metadata = promisify(metadata_ => ECHPUNKS_NFT_Contract_Contract.methods.metadata().call(metadata_))
     _totalSupply = promisify(totalSupply_ => ECHPUNKS_NFT_Contract.methods.totalSupply().call(totalSupply_))
+    __isPurchasable = promisify(isPurchasable_ => ECHPUNKS_NFT_Contract.methods.isPurchasable().call(isPurchasable_))
+
+
     _tokensByOwner = promisify(tokensByOwner_ => ECHPUNKS_NFT_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner_))
     _isApproved = promisify(isApproved_ => ECHP_Contract.methods.allowance(currentAccount, ECHPUNKS_NFT_address).call(isApproved_))
     _ECHP_Balance = promisify(ECHP_Balance_ => ECHP_Contract.methods.balanceOf(currentAccount).call(ECHP_Balance_))
 
-    Promise.all([_totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance])
+    Promise.all([_totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable])
 
 
 
-    .then(function ([totalSupply, tokensByOwner, isApproved, ECHP_Balance]) {
+    .then(function ([totalSupply, tokensByOwner, isApproved, ECHP_Balance, isPurchasable]) {
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
-        document.getElementById('ECHP_Balance').innerHTML = "<p>ECHP Balance<br>" + readECHPBalance + "</p>"
+        document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance<br>" + readECHPBalance + "</p>"
+        // console.log(isPurchasable)
+
+        if (!isPurchasable) {
+            document.getElementById('mint_button').disabled = true
+        }
 
         document.getElementById('buy_echp_div').hidden = false;
         document.getElementById('nft_info_card').hidden = false
         // console.log('is approved for ' + parseInt(isApproved))
 
         if (totalSupply >= 30) {
-            document.getElementById('current_price').innerHTML = ".04" 
+            document.getElementById('current_price').innerHTML = "700" 
         } else if (totalSupply >= 20) {
-            document.getElementById('current_price').innerHTML = ".03"
+            document.getElementById('current_price').innerHTML = "600"
         } else if (totalSupply >= 10) {
-            document.getElementById('current_price').innerHTML = ".02"
+            document.getElementById('current_price').innerHTML = "500"
         } else {
-            document.getElementById('current_price').innerHTML = ".01"
+            document.getElementById('current_price').innerHTML = "400"
         }
         
         
@@ -96,17 +104,17 @@ async function getAccount() {
         }
         
     })
-    showAccount.innerHTML = "<p>Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
+    showAccount.innerHTML = "<p>My Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
 
     if (network === 4) { // rinkeby=4  ech=3000
-        showBalance.innerHTML = "<p>Rinkeby ETH:<br>" + read.toFixed(5) + "</p>"
+        showBalance.innerHTML = "<p>My ECH Balance:<br>" + read.toFixed(5) + "</p>"
         return currentAccount;
     } else {
         loadDataButton.innerHTML = "Switch to Rinkeby Network and Try Again"
     }
 }
 
-ECHPUNKS_NFT_Contract.events.NFTMinted({fromBlock: "latest"}).on("connected", function (subscriptionId) {
+ECHPUNKS_NFT_Contract.events.Mint({fromBlock: "latest"}).on("connected", function (subscriptionId) {
     // console.log('callback')
     // console.log(subscriptionId);
     

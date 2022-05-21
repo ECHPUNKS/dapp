@@ -1,37 +1,37 @@
 {
-  "dna": "fb9fe87cca026379761f55a340308e16",
-  "name": "ECHPunks NFT's #408",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/408.png",
-  "date": 1652894323720,
+  "dna": "a8a51665c4e2a3950c5c3b6cc8f3d390",
+  "name": "ECHPunk #408",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/408.png",
+  "date": 1653143143823,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Bit Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Chuckle"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Street Punk And Oi"
+      "trait_type": "Accessories",
+      "value": "Bubble Gum"
     },
     {
-      "trait_type": "accessories",
-      "value": "Pipe"
+      "trait_type": "Outfit",
+      "value": "Pop Punk"
     }
   ],
   "compiler": "mintables.club"

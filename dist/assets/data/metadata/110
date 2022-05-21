@@ -1,38 +1,37 @@
 {
-  "dna": "18e0032efcd1d11aa29f8b16aa4aa607",
-  "name": "ECHPunks NFT's #110",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/110.png",
-  "date": 1652893922681,
+  "dna": "4d81cdaeb68dd642d1df993841961814",
+  "name": "ECHPunk #110",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/110.png",
+  "date": 1653142825293,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Disgusting"
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Chuckle"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Crust punk"
+      "trait_type": "Accessories",
+      "value": "Spider Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Neck"
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

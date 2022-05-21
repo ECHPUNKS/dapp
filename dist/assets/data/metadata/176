@@ -1,38 +1,37 @@
 {
-  "dna": "ba203c380a4e8efca88e176dc9de0bc7",
-  "name": "ECHPunks NFT's #176",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/176.png",
-  "date": 1652893976621,
+  "dna": "d117de8bbfb3e6fe2e8bcebf34ce61c4",
+  "name": "ECHPunk #176",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/176.png",
+  "date": 1653142918763,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Bit Glasses"
+      "trait_type": "Hair/Hat",
+      "value": "Spike Cap"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Docker"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Not Bad"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Celtic Punk"
+      "trait_type": "Accessories",
+      "value": "Pipe"
     },
     {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Horror Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

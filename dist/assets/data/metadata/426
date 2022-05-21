@@ -1,37 +1,37 @@
 {
-  "dna": "023b0217a16f3514b99d9898e5074652",
-  "name": "ECHPunks NFT's #426",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/426.png",
-  "date": 1652894354012,
+  "dna": "7a09d9f37a3cbf8049a28b4b2a803034",
+  "name": "ECHPunk #426",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/426.png",
+  "date": 1653143151932,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 4"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stare"
+      "trait_type": "Hair/Hat",
+      "value": "Spikey"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Smirk"
+      "trait_type": "Mouth",
+      "value": "Belittle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Cow Punk"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Gypsy Punk"
     }
   ],
   "compiler": "mintables.club"

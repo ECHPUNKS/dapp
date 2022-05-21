@@ -1,38 +1,37 @@
 {
-  "dna": "dd5ba69a20f0652fec9fcd43685b20e6",
-  "name": "ECHPunks NFT's #40",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/40.png",
-  "date": 1652893834495,
+  "dna": "23317c0ae56ac56bc6db15f417ab8acf",
+  "name": "ECHPunk #40",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/40.png",
+  "date": 1653142708446,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Heavy Metal"
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Spikey"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Chuckle"
+      "trait_type": "Mouth",
+      "value": "Gold Teeth V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Hardcore Punk"
+      "trait_type": "Accessories",
+      "value": "Joint"
     },
     {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Dance Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

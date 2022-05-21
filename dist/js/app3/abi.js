@@ -65,7 +65,7 @@ const abi = [
                 "type": "uint256"
             }
         ],
-        "name": "NFTMinted",
+        "name": "Mint",
         "type": "event"
     }, {
         "anonymous": false,
@@ -105,6 +105,23 @@ const abi = [
             }
         ],
         "name": "Transfer",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            }, {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
         "type": "event"
     }, {
         "inputs": [

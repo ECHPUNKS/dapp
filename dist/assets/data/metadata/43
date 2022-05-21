@@ -1,38 +1,37 @@
 {
-  "dna": "81f09738a83d9f085e2b4da3acc6eb42",
-  "name": "ECHPunks NFT's #43",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/43.png",
-  "date": 1652893835931,
+  "dna": "d2b7903d4bc955827db1e94cc94be333",
+  "name": "ECHPunk #43",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/43.png",
+  "date": 1653142711629,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Background 4"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
+      "trait_type": "Hair/Hat",
+      "value": "Rainbow"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Street Punk And Oi"
+      "trait_type": "Accessories",
+      "value": "Cigarette"
     },
     {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Hardcore Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

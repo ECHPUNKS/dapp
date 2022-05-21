@@ -1,38 +1,37 @@
 {
-  "dna": "b1807b155c61d139a84d56440bbbc9d0",
-  "name": "ECHPunks NFT's #150",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/150.png",
-  "date": 1652893956016,
+  "dna": "c6a84f302b2bbb0c997b645cb59ff627",
+  "name": "ECHPunk #150",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/150.png",
+  "date": 1653142893916,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Gold Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Chuckle"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Crust punk"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Joint"
+      "trait_type": "Outfit",
+      "value": "Hardcore Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

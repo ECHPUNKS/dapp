@@ -1,38 +1,37 @@
 {
-  "dna": "4afb1e43c03db51d5fe85c28452a4719",
-  "name": "ECHPunks NFT's #130",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/130.png",
-  "date": 1652893939589,
+  "dna": "136b43a1b46007249729782c720b808d",
+  "name": "ECHPunk #130",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/130.png",
+  "date": 1653142845375,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "SnackBack Hat"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Brunette"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
-      "value": "Not Bad"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Droog"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "accessories",
-      "value": "Joint"
+      "trait_type": "Outfit",
+      "value": "Dance Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

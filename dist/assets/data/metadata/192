@@ -1,38 +1,37 @@
 {
-  "dna": "7402f29f3b2c62fa8c0cad75569a47cb",
-  "name": "ECHPunks NFT's #192",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/192.png",
-  "date": 1652893993306,
+  "dna": "7342d09adf6b7b205f3b50b5806c0fcd",
+  "name": "ECHPunk #192",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/192.png",
+  "date": 1653142933413,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 1"
+      "trait_type": "Background",
+      "value": "Background 2"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Brunette"
+      "trait_type": "Eyes/Glasses",
+      "value": "Steampunk"
     },
     {
-      "trait_type": "mouth",
-      "value": "Belittle"
+      "trait_type": "Mouth",
+      "value": "Gold Teeth V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Street Punk And Oi"
+      "trait_type": "Accessories",
+      "value": "Cigarette"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Crust punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

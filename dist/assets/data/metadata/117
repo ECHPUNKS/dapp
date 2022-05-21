@@ -1,38 +1,37 @@
 {
-  "dna": "491c1016a442ca41b8d4f6ef8a99a685",
-  "name": "ECHPunks NFT's #117",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/117.png",
-  "date": 1652893925653,
+  "dna": "a8c665dd2b0a0feaeeebab13bb358f30",
+  "name": "ECHPunk #117",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/117.png",
+  "date": 1653142832271,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Alternatice colors"
+      "trait_type": "Eyes/Glasses",
+      "value": "Vetements"
     },
     {
-      "trait_type": "mouth",
-      "value": "Belittle"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Skate Punk"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "accessories",
-      "value": "Laser Eyes"
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

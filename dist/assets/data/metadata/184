@@ -1,38 +1,37 @@
 {
-  "dna": "17461c4e7d2491eede07013ed1410eff",
-  "name": "ECHPunks NFT's #184",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/184.png",
-  "date": 1652893989752,
+  "dna": "52fdc9f7601de14eb9f75ac5e56cf6e1",
+  "name": "ECHPunk #184",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/184.png",
+  "date": 1653142927497,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Blue"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stare"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Brunette"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stay Up Late"
     },
     {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Not Bad"
     },
     {
-      "trait_type": "outfits",
-      "value": "Droog"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "accessories",
-      "value": "Pipe"
+      "trait_type": "Outfit",
+      "value": "Cow Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

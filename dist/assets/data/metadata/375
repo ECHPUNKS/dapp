@@ -1,37 +1,37 @@
 {
-  "dna": "a36a52172775c7507777c314d8ed7a3b",
-  "name": "ECHPunks NFT's #375",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/375.png",
-  "date": 1652894267400,
+  "dna": "aba67a9bf5680431b49e1fb31d163070",
+  "name": "ECHPunk #375",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/375.png",
+  "date": 1653143105167,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Rainbow"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
-    },
-    {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Phsychobilly"
+      "trait_type": "Accessories",
+      "value": "Laser Eyes"
     },
     {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Ska Punk"
     }
   ],
   "compiler": "mintables.club"

@@ -1,38 +1,37 @@
 {
-  "dna": "3033562610aa6c3c5acfb2e3adcd7ebc",
-  "name": "ECHPunks NFT's #22",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/22.png",
-  "date": 1652893814803,
+  "dna": "1352ba1736b91c1664d837795e776994",
+  "name": "ECHPunk #22",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/22.png",
+  "date": 1653142687897,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Background 1"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Bucket Hat"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V1"
+      "trait_type": "Mouth",
+      "value": "Grin"
     },
     {
-      "trait_type": "outfits",
-      "value": "Garage Punk"
+      "trait_type": "Accessories",
+      "value": "Laser Eyes"
     },
     {
-      "trait_type": "accessories",
-      "value": "Bubble Gum"
+      "trait_type": "Outfit",
+      "value": "Crust punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

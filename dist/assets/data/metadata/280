@@ -1,38 +1,37 @@
 {
-  "dna": "600560003e1a77620b352c75d9589b77",
-  "name": "ECHPunks NFT's #280",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/280.png",
-  "date": 1652894132969,
+  "dna": "58bf28e65a54d821f0705251e7025d26",
+  "name": "ECHPunk #280",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/280.png",
+  "date": 1653143016353,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Blue"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
+      "trait_type": "Hair/Hat",
+      "value": "Spike Cap"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Alternatice colors"
+      "trait_type": "Eyes/Glasses",
+      "value": "Gold Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Mouth",
+      "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Garage Punk"
+      "trait_type": "Accessories",
+      "value": "Joint"
     },
     {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Outfit",
+      "value": "Dance Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

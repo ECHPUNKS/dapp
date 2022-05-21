@@ -1,38 +1,37 @@
 {
-  "dna": "a66fc16dc572864ef61b76343b0addd7",
-  "name": "ECHPunks NFT's #189",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/189.png",
-  "date": 1652893991994,
+  "dna": "7e0b69f24b0c6f1544201ef93425d585",
+  "name": "ECHPunk #189",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/189.png",
+  "date": 1653142931780,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
-    },
-    {
-      "trait_type": "hair/hat",
+      "trait_type": "Hair/Hat",
       "value": "Bucket Hat"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "outfits",
-      "value": "Garage Punk"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "accessories",
-      "value": "Neck"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Anarcho Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

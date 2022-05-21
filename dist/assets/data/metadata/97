@@ -1,38 +1,37 @@
 {
-  "dna": "0877710467100e881897f2b16be85649",
-  "name": "ECHPunks NFT's #97",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/97.png",
-  "date": 1652893879728,
+  "dna": "56b53c0917daf01674c8254dd0fa852d",
+  "name": "ECHPunk #97",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/97.png",
+  "date": 1653142793389,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 3"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Stare"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "SnackBack Hat"
-    },
-    {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Tongue Out"
     },
     {
-      "trait_type": "outfits",
-      "value": "Cow Punk"
+      "trait_type": "Accessories",
+      "value": "Spider Earing"
     },
     {
-      "trait_type": "accessories",
-      "value": "Cigarettes"
+      "trait_type": "Outfit",
+      "value": "Cow Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

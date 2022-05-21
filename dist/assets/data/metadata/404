@@ -1,37 +1,37 @@
 {
-  "dna": "59d5b29558ecc62aca4a057549d34e5d",
-  "name": "ECHPunks NFT's #404",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/404.png",
-  "date": 1652894319633,
+  "dna": "52ef541ab5c03f0a2521f5c835064164",
+  "name": "ECHPunk #404",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/404.png",
+  "date": 1653143141723,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 3"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Vetements"
+      "trait_type": "Hair/Hat",
+      "value": "SnackBack Hat"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Smirk"
     },
     {
-      "trait_type": "outfits",
-      "value": "Anarcho-Punk"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "accessories",
-      "value": "Joint"
+      "trait_type": "Outfit",
+      "value": "Ska Punk"
     }
   ],
   "compiler": "mintables.club"

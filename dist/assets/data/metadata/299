@@ -1,38 +1,37 @@
 {
-  "dna": "029301275e4acda4ffee0284f1ba5a64",
-  "name": "ECHPunks NFT's #299",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/299.png",
-  "date": 1652894152325,
+  "dna": "d514e75954a36d99541536c410caf973",
+  "name": "ECHPunk #299",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/299.png",
+  "date": 1653143026166,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
-    },
-    {
-      "trait_type": "hair/hat",
+      "trait_type": "Hair/Hat",
       "value": "Blonde"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V1"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "outfits",
-      "value": "Anarcho-Punk"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "accessories",
-      "value": "Bubble Gum"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Phsychobilly"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

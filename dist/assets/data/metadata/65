@@ -1,38 +1,37 @@
 {
-  "dna": "5d15939d3debb8012ee6dd7b5466e0af",
-  "name": "ECHPunks NFT's #65",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/65.png",
-  "date": 1652893855168,
+  "dna": "7ea60fb1de8498b7482d6e000e9cee21",
+  "name": "ECHPunk #65",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/65.png",
+  "date": 1653142762074,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Spikey"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Mouth",
+      "value": "Not Bad"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Accessories",
+      "value": "Joint"
     },
     {
-      "trait_type": "outfits",
-      "value": "Crust punk"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Garage Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

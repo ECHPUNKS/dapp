@@ -1,37 +1,37 @@
 {
-  "dna": "b6791de51d8f04228d6fe3974c52c8b4",
-  "name": "ECHPunks NFT's #344",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/344.png",
-  "date": 1652894228279,
+  "dna": "e827e0c058532e7614233f0729da5ef9",
+  "name": "ECHPunk #344",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/344.png",
+  "date": 1653143066372,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "silver"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Beanie"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Belittle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Dark Cabaret And Gypsy Punk"
+      "trait_type": "Accessories",
+      "value": "Pipe"
     },
     {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Street Punk"
     }
   ],
   "compiler": "mintables.club"

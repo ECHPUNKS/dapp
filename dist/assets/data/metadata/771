@@ -1,0 +1,38 @@
+{
+  "dna": "bda772aad2b8f75163430587b189cf3d",
+  "name": "ECHPunk #771",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://QmPZtd4JTeTXL3aoRHxjyqLkmU7PfK5vVg42M2iHeagyAm/771.png",
+  "date": 1653143476904,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Background 1"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Light"
+    },
+    {
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Not Bad"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Joint"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Skate Punk"
+    }
+  ],
+  "compiler": "mintables.club"
+}

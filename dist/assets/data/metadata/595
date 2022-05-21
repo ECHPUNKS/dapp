@@ -1,0 +1,38 @@
+{
+  "dna": "056f0b1f6ca63271bbd461e3d65a87ba",
+  "name": "ECHPunk #595",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://QmPZtd4JTeTXL3aoRHxjyqLkmU7PfK5vVg42M2iHeagyAm/595.png",
+  "date": 1653143309078,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Background 3"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Dark"
+    },
+    {
+      "trait_type": "Hair/Hat",
+      "value": "SnackBack Hat"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Tongue Out"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Street Punk"
+    }
+  ],
+  "compiler": "mintables.club"
+}

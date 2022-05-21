@@ -1,37 +1,37 @@
 {
-  "dna": "5b0988bf9c8cc88cc658c06fc554188f",
-  "name": "ECHPunks NFT's #390",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/390.png",
-  "date": 1652894294287,
+  "dna": "51459e5c8c0c34702d5caa8c44098036",
+  "name": "ECHPunk #390",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/390.png",
+  "date": 1653143112118,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Stay Up Late"
+      "trait_type": "Hair/Hat",
+      "value": "Rainbow"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Celtic Punk"
+      "trait_type": "Accessories",
+      "value": "Laser Eyes"
     },
     {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Gypsy Punk"
     }
   ],
   "compiler": "mintables.club"

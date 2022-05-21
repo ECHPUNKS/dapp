@@ -1,37 +1,37 @@
 {
-  "dna": "2e4f03eed1614f7f5dec0a30377cf543",
-  "name": "ECHPunks NFT's #434",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/434.png",
-  "date": 1652894362093,
+  "dna": "e43b92c3a3b86813537b73171a928498",
+  "name": "ECHPunk #434",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/434.png",
+  "date": 1653143155835,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Steampunk"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Brunette"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V2"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Droog"
+      "trait_type": "Accessories",
+      "value": "Multiple Earrings"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Celtic Punk"
     }
   ],
   "compiler": "mintables.club"

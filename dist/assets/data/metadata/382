@@ -1,37 +1,37 @@
 {
-  "dna": "df9aa58d4d7ff35093302e063cadf947",
-  "name": "ECHPunks NFT's #382",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/382.png",
-  "date": 1652894286402,
+  "dna": "7e8bfe42ea38d77929d9c03dfaff3016",
+  "name": "ECHPunk #382",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/382.png",
+  "date": 1653143108376,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Bit Glasses"
+      "trait_type": "Hair/Hat",
+      "value": "Spike Cap"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Bucket Hat"
+      "trait_type": "Eyes/Glasses",
+      "value": "Disgusting"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Anarcho-Punk"
+      "trait_type": "Accessories",
+      "value": "Cigarette"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Skate Punk"
     }
   ],
   "compiler": "mintables.club"

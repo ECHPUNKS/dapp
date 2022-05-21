@@ -31,14 +31,14 @@ function approve_account() {
 }
 
 const findPrice = () => {
-    if (totalSupplyForPrice >= 30) {
-        return 40000000000000000
-    } else if (totalSupplyForPrice >= 20) {
-        return 30000000000000000
-    } else if (totalSupplyForPrice >= 10) {
-        return 20000000000000000
+    if (totalSupplyForPrice >= 30) { //750
+        return 40000000000000000 // 700000000000000000000
+    } else if (totalSupplyForPrice >= 20) { //500
+        return 30000000000000000 // 600000000000000000000
+    } else if (totalSupplyForPrice >= 10) {//250
+        return 20000000000000000 // 500000000000000000000
     } else {
-        return 10000000000000000
+        return 10000000000000000 // 400000000000000000000
     }
 }
 

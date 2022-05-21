@@ -1,38 +1,37 @@
 {
-  "dna": "6b373f202485d7dc2209fd7743ef017e",
-  "name": "ECHPunks NFT's #102",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/102.png",
-  "date": 1652893919133,
+  "dna": "1a9e010ebb38b02f09210e881e5b72cb",
+  "name": "ECHPunk #102",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/102.png",
+  "date": 1653142817980,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Gold"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Steampunk"
+      "trait_type": "Hair/Hat",
+      "value": "Mohawk"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Docker"
+      "trait_type": "Eyes/Glasses",
+      "value": "Gold Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Mouth",
+      "value": "Lipstick V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Phsychobilly"
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
     },
     {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Celtic Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

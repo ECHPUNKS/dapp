@@ -1,38 +1,37 @@
 {
-  "dna": "33518d373f9290f54580ee3ca6d2c093",
-  "name": "ECHPunks NFT's #123",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/123.png",
-  "date": 1652893936660,
+  "dna": "a04785c2323c9abd06d63e4eb4d7fb27",
+  "name": "ECHPunk #123",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/123.png",
+  "date": 1653142838348,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Background 1"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Bucket Hat"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Disgusting"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "SnackBack Hat"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "mouth",
-      "value": "Grin"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
     },
     {
-      "trait_type": "outfits",
-      "value": "Pop Punk"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Bubble Gum"
+      "trait_type": "Outfit",
+      "value": "Celtic Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

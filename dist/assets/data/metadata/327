@@ -1,38 +1,37 @@
 {
-  "dna": "75c6ca44353483f3a9542ae0333b1f25",
-  "name": "ECHPunks NFT's #327",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/327.png",
-  "date": 1652894199933,
+  "dna": "c630aeaaace39f963e779f1c917d18df",
+  "name": "ECHPunk #327",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/327.png",
+  "date": 1653143058597,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Yellow"
+      "trait_type": "Background",
+      "value": "Background 5"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Vetements"
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stay Up Late"
     },
     {
-      "trait_type": "mouth",
-      "value": "Smirk"
+      "trait_type": "Mouth",
+      "value": "Gold Teeth V2"
     },
     {
-      "trait_type": "outfits",
+      "trait_type": "Accessories",
+      "value": "Cigarette"
+    },
+    {
+      "trait_type": "Outfit",
       "value": "Droog"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

@@ -1,37 +1,37 @@
 {
-  "dna": "ac9048f999c1286af8cbc54a76182acd",
-  "name": "ECHPunks NFT's #381",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/381.png",
-  "date": 1652894285463,
+  "dna": "852a57b80492417c26952238fcd64f25",
+  "name": "ECHPunk #381",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/381.png",
+  "date": 1653143107893,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 2"
+      "trait_type": "Background",
+      "value": "Green"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Angry"
+      "trait_type": "Hair/Hat",
+      "value": "Bucket Hat"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "SnackBack Hat"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V2"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Crust punk"
+      "trait_type": "Accessories",
+      "value": "Bubble Gum"
     },
     {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
+      "trait_type": "Outfit",
+      "value": "Droog"
     }
   ],
   "compiler": "mintables.club"

@@ -1,37 +1,37 @@
 {
-  "dna": "b19d5c8296647c4a4060a05a00895530",
-  "name": "ECHPunks NFT's #338",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/338.png",
-  "date": 1652894210497,
+  "dna": "feaed1268f08dda483c51618fb1d368b",
+  "name": "ECHPunk #338",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/338.png",
+  "date": 1653143063669,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Silver"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Glance"
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Blonde"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stay Up Late"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Mouth",
+      "value": "Lipstick V2"
     },
     {
-      "trait_type": "outfits",
-      "value": "Hardcore Punk"
-    },
-    {
-      "trait_type": "accessories",
+      "trait_type": "Accessories",
       "value": "Joint"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Crust punk"
     }
   ],
   "compiler": "mintables.club"

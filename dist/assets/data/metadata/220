@@ -1,38 +1,37 @@
 {
-  "dna": "26c5516e212d603015fad9aece621703",
-  "name": "ECHPunks NFT's #220",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/220.png",
-  "date": 1652894038884,
+  "dna": "6eeed1e0d7c942f856a45f4641a352cb",
+  "name": "ECHPunk #220",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/220.png",
+  "date": 1653142968355,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 2"
+      "trait_type": "Background",
+      "value": "Yellow"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Steampunk"
+      "trait_type": "Hair/Hat",
+      "value": "Docker"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "SnackBack Hat"
+      "trait_type": "Eyes/Glasses",
+      "value": "Gold Glasses"
     },
     {
-      "trait_type": "mouth",
-      "value": "Gold Teeth V1"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "outfits",
-      "value": "Horror Punk and Deathrock"
+      "trait_type": "Accessories",
+      "value": "Multiple Earrings"
     },
     {
-      "trait_type": "accessories",
-      "value": "Spider"
+      "trait_type": "Outfit",
+      "value": "Skate Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

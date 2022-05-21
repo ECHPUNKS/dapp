@@ -1,37 +1,37 @@
 {
-  "dna": "712221fcb5c69fc722303f53ee848886",
-  "name": "ECHPunks NFT's #376",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/376.png",
-  "date": 1652894268346,
+  "dna": "f83077f443cfaa238484ede5bf3a4ea8",
+  "name": "ECHPunk #376",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/376.png",
+  "date": 1653143105619,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 2"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Alternatice colors"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "mouth",
-      "value": "Smirk"
+      "trait_type": "Accessories",
+      "value": "Joint"
     },
     {
-      "trait_type": "outfits",
-      "value": "Garage Punk"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Hanging Spikes"
+      "trait_type": "Outfit",
+      "value": "Phsychobilly"
     }
   ],
   "compiler": "mintables.club"

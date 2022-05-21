@@ -1,38 +1,37 @@
 {
-  "dna": "fd38bfd50cc9c597ff31712a4f2ac883",
-  "name": "ECHPunks NFT's #1",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/1.png",
-  "date": 1652893780198,
+  "dna": "fdd9c9236c4d4a1f183a038a8f2a5680",
+  "name": "ECHPunk #1",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/1.png",
+  "date": 1653142662503,
   "attributes": [
     {
-      "trait_type": "background",
+      "trait_type": "Background",
       "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "gold"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Disgusting"
+      "trait_type": "Hair/Hat",
+      "value": "Bucket Hat"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Mohawk"
+      "trait_type": "Eyes/Glasses",
+      "value": "Stare"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V1"
+      "trait_type": "Mouth",
+      "value": "Gold Teeth V2"
     },
     {
-      "trait_type": "outfits",
+      "trait_type": "Accessories",
+      "value": "Spiked Choker"
+    },
+    {
+      "trait_type": "Outfit",
       "value": "Ska Punk"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Face Tattoos"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

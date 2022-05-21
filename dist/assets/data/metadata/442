@@ -1,37 +1,37 @@
 {
-  "dna": "ce1e567677b000ca1b8b86c49c2a18f9",
-  "name": "ECHPunks NFT's #442",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/442.png",
-  "date": 1652894381181,
+  "dna": "0ce3cec6b3726c63b4bfebf27b085902",
+  "name": "ECHPunk #442",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/442.png",
+  "date": 1653143159464,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Green"
+      "trait_type": "Background",
+      "value": "Blue"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Dark"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Alternatice colors"
+      "trait_type": "Mouth",
+      "value": "Chuckle"
     },
     {
-      "trait_type": "mouth",
-      "value": "Tongue Out"
+      "trait_type": "Accessories",
+      "value": "Spike Earing"
     },
     {
-      "trait_type": "outfits",
-      "value": "Street Punk And Oi"
-    },
-    {
-      "trait_type": "accessories",
-      "value": "Neck"
+      "trait_type": "Outfit",
+      "value": "Cow Punk"
     }
   ],
   "compiler": "mintables.club"

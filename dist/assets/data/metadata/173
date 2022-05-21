@@ -1,38 +1,37 @@
 {
-  "dna": "feb2260c7e2e20dd0144fa2ffecc1e6a",
-  "name": "ECHPunks NFT's #173",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/173.png",
-  "date": 1652893975161,
+  "dna": "204491d454081d106529b4aa0a1d5538",
+  "name": "ECHPunk #173",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/173.png",
+  "date": 1653142915845,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Background 5"
+      "trait_type": "Background",
+      "value": "Pink"
     },
     {
-      "trait_type": "body",
-      "value": "light"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
-      "value": "Disgusting"
-    },
-    {
-      "trait_type": "hair/hat",
+      "trait_type": "Hair/Hat",
       "value": "Beanie"
     },
     {
-      "trait_type": "mouth",
-      "value": "Lipstick V1"
+      "trait_type": "Eyes/Glasses",
+      "value": "Glance"
     },
     {
-      "trait_type": "outfits",
-      "value": "Cow Punk"
+      "trait_type": "Mouth",
+      "value": "Smirk"
     },
     {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Accessories",
+      "value": "Face Tattoo"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Pop Punk"
     }
-  ],
-  "compiler": "mintables.club"
+  ]
 }

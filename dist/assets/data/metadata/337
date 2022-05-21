@@ -1,37 +1,37 @@
 {
-  "dna": "0b32912ccc801aabec7427c9153bbaa8",
-  "name": "ECHPunks NFT's #337",
-  "description": "Randomly Generated Profile Picture NFT Avatars",
-  "image": "REPLACE-THIS-WITH-YOUR-URL/337.png",
-  "date": 1652894209524,
+  "dna": "157cb65e1d9cb3b7abb344dc6f400f96",
+  "name": "ECHPunk #337",
+  "description": "ECHPunks NFTs are Echelon based non-fungible tokens build for the ECHP token ecosystem",
+  "image": "ipfs://Qme26wxYptgmgK8YYeQgXFkvEYwpL4rWNV54tGKa4UKaWJ/337.png",
+  "date": 1653143063256,
   "attributes": [
     {
-      "trait_type": "background",
-      "value": "Pink"
+      "trait_type": "Background",
+      "value": "Background 1"
     },
     {
-      "trait_type": "body",
-      "value": "dark"
+      "trait_type": "Body",
+      "value": "Light"
     },
     {
-      "trait_type": "eyes/glasses",
+      "trait_type": "Hair/Hat",
+      "value": "Mullet"
+    },
+    {
+      "trait_type": "Eyes/Glasses",
       "value": "Angry"
     },
     {
-      "trait_type": "hair/hat",
-      "value": "Docker"
-    },
-    {
-      "trait_type": "mouth",
+      "trait_type": "Mouth",
       "value": "Gold Teeth V1"
     },
     {
-      "trait_type": "outfits",
-      "value": "Cow Punk"
+      "trait_type": "Accessories",
+      "value": "Joint"
     },
     {
-      "trait_type": "accessories",
-      "value": "Multiple Earrings"
+      "trait_type": "Outfit",
+      "value": "Ska Punk"
     }
   ],
   "compiler": "mintables.club"

@@ -51,6 +51,14 @@ a[data-toggle="collapse"].collapsed i.fas:before {
   font-family: Cyberverse;
   src: url('./../assets/fonts/Cyberverse.otf');
 }
+@font-face {
+  font-family: DigitalDare;
+  src: url('./../assets/fonts/DigitalDare.ttf');
+}
+@font-face {
+  font-family: Digital;
+  src: url('./../assets/fonts/Digital.ttf');
+}
 
 ::-webkit-scrollbar {
   width: 10px;

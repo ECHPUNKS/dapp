@@ -55,6 +55,18 @@ const abi = [
         "inputs": [
             {
                 "indexed": false,
+                "internalType": "bool",
+                "name": "isPurchasable",
+                "type": "bool"
+            }
+        ],
+        "name": "MakePurchasable",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
                 "internalType": "address",
                 "name": "account",
                 "type": "address"
@@ -83,6 +95,66 @@ const abi = [
             }
         ],
         "name": "OwnershipTransferred",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newCurrentBatch",
+                "type": "uint256"
+            }
+        ],
+        "name": "SetCurrentBatch",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newErc20Cost",
+                "type": "uint256"
+            }
+        ],
+        "name": "SetErc20Cost",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newErc20Token",
+                "type": "address"
+            }
+        ],
+        "name": "SetErc20Token",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newMax",
+                "type": "uint256"
+            }
+        ],
+        "name": "SetMaxMintable",
+        "type": "event"
+    }, {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "batchNumber",
+                "type": "uint256"
+            }
+        ],
+        "name": "SetMetadata",
         "type": "event"
     }, {
         "anonymous": false,
@@ -247,7 +319,7 @@ const abi = [
         "type": "function"
     }, {
         "inputs": [],
-        "name": "isPurchable",
+        "name": "isPurchasable",
         "outputs": [
             {
                 "internalType": "bool",
@@ -260,13 +332,7 @@ const abi = [
     }, {
         "inputs": [],
         "name": "makePurchable",
-        "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
-        ],
+        "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
     }, {

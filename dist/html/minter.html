@@ -43,12 +43,6 @@
                             <div id="sidebar_purchase_info_div">
                                 <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <!-- <div class="nav-link" id="buy_echp_button_div">
-                                            <a target="_blank"
-                                                href="https://app.uniswap.org/#/swap?">
-                                                <button class="btn btn-sm btn-primary" id="buy_echp_button">Buy/Sell ECHP Token</button>
-                                            </a>
-                                        </div> -->
                                     </nav>
                                 </div>
                             </div>
@@ -117,29 +111,27 @@
                                 <img id="image_display" class="img-fluid rounded mt-2 p-5" style="width:350px" src="./../assets/images/logos/logo2.png" alt="image">
                             </div>
                         </div>
-                        <div hidden class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
-                            <div class="card-body text-center pt-3" id="">
-                                <h6>CURRENTLY MINTING</h6>
-                                <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2>
-                                <div class="col-12">
-                                    <div id="">
-                                        <p>
-                                            <b>COST:</b><br>
-                                            <span id="current_price"></span> ECH<br>
-                                            25,000,000 ECHP
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="col-md-6">
                         <div class="row" id="mint_row">
                             <div class="col-12">
-
+                                <div hidden class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
+                                    <div class="card-body text-center pt-3" id="">
+                                        <h6>CURRENTLY MINTING</h6>
+                                        <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2>
+                                        <div class="col-12">
+                                            <div id="">
+                                                <p>
+                                                    <b>COST:</b><br>
+                                                    <span id="current_price"></span> ECH<br>
+                                                    25,000,000 ECHP
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-
                                 <div id="row_accordion2">
                                     <div class="card bg-secondary rounded border-dark text-white mb-2">
                                         <div id="headingOne3" style="background-color:#3E4145;">
@@ -175,26 +167,28 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-2">
                                 
-                                <div hidden id="my_echpunks_div" >
-                                    <div class="card bg-secondary rounded border-dark text-white mb-2">
-                                        <div id="headingOne3"
-                                            style="background-color:#3E4145;">
-                                            <div class="card-title text-center" style="background-color: #3E4145 !important; cursor: pointer;">
-                                                <b class="ml-2 mb-0">MY ECHPUNKS</b>
-                                            </div>
+                    <div hidden id="my_echpunks_div" >
+                        <div class="card bg-secondary rounded border-dark text-white mb-2">
+                            <div id="headingOne3"
+                                style="background-color:#3E4145;">
+                                <div class="card-title text-center" style="background-color: #3E4145 !important; cursor: pointer;">
+                                    <b class="ml-2 mb-0">MY ECHPUNKS</b>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="feed_row_accordion" class="card-body text-center">
+                                    <div class="card-body text-center" id="">
+                                        <p><a href="/stats">>> SEE MORE STATS <<</a></p>
+                                        
+                                        <div id="myPunks" class="row justify-content-center">
                                         </div>
-                                        <div>
-                                            <div id="feed_row_accordion" class="card-body text-center">
-                                                <div class="card-body text-center" id="">
-                                                    <p><a href="/stats">>> SEE MORE STATS <<</a></p>
-                                                    
-                                                    <div id="myPunks" class="row text-center">
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -234,8 +228,8 @@
             integrity="sha512-7UzDjRNKHpQnkh1Wf1l6i/OPINS9P2DDzTwQNX79JxfbInCXGpgI1RPb3ZD+uTP3O5X7Ke4e0+cxt2TxV7n0qQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./../js/app3/abi.js"></script>
-        <script src="./../js/app3/app4.js"></script>
+        <script src="./../js/app/abi.js"></script>
+        <script src="./../js/app/app.js"></script>
         <script>
             
             $(function () {

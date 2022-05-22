@@ -9,7 +9,7 @@ module.exports = router;
 
 
 router.get('/minter', (__, res) => {
-    res.sendFile(path.join(__dirname, '/../dist/html/app4.html'));
+    res.sendFile(path.join(__dirname, '/../dist/html/minter.html'));
 });
 router.get('/', (__, res) => {
     res.sendFile(path.join(__dirname, '/../dist/html/index.html'));

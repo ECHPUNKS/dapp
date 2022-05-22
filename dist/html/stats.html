@@ -28,7 +28,6 @@
     <body class="sb-nav-fixed bg-dark" id="body">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark justify-content-between">
             <a href="/" class="rounded mr-3 ml-3" style="text-decoration: none;letter-spacing: 2px !important;">
-                <!-- <h4 style="font-family:Cyberverse;" class="p-0"> -->
                 <h4 style="font-family:Digital;" class="p-0">
                     <span style="color: #BA83FC;">ECH</span><span style="color: white;">Punks Stats</span>
                 </h4>
@@ -44,12 +43,6 @@
                             <div id="sidebar_purchase_info_div">
                                 <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <!-- <div class="nav-link" id="buy_echp_button_div">
-                                            <a target="_blank"
-                                                href="https://app.uniswap.org/#/swap?">
-                                                <button class="btn btn-sm btn-primary" id="buy_echp_button">Buy/Sell ECHP Token</button>
-                                            </a>
-                                        </div> -->
                                     </nav>
                                 </div>
                             </div>
@@ -104,9 +97,9 @@
             <div class="container-fluid px-4">
                 <a href="/minter"><< Back to Minter</a>
                 <div class="row justify-content-center pt-2">
-                    <div class="col-md-12" id="button_column">
-                        <div id="enableMeta" class="card bg-secondary rounded border-dark text-white mb-2">
-                            <div class="card-body text-center p-1" id="connect_button_div">
+                    <div class="col-md-12 pt-4" id="button_column">
+                        <div id="enableMeta" class="card rounded border-dark text-white mb-2">
+                            <div class="card-body text-center p-1" id="connect_button_div" style="background-color: #242424 !important;">
                                 <button class="enableEthereumButton btn btn-sm btn-primary border border-primary" id="buttonmeta"
                                     type="button">
                                     CONNECT WALLET
@@ -114,14 +107,14 @@
                             </div>
                         </div>
                         <div hidden id="load_button_div" class="card bg-secondary rounded border-dark text-white mb-2">
-                           <div class="card-body text-center p-1" id="">
+                           <div class="card-body text-center p-1" id="" style="background-color: #242424 !important;">
                                     <button id="mint_button" onclick="loadMetadata()" class="btn btn-sm btn-danger">LOAD DATA</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center text-white pt-2">
-                    <div id="myPunks" class="row text-center">
+                    <div id="myPunks" class="row text-center justify-content-center">
                                                     </div>
                 </div>
                 
@@ -157,8 +150,8 @@
             integrity="sha512-7UzDjRNKHpQnkh1Wf1l6i/OPINS9P2DDzTwQNX79JxfbInCXGpgI1RPb3ZD+uTP3O5X7Ke4e0+cxt2TxV7n0qQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./../js/app3/abi.js"></script>
-        <script src="./../js/app3/stats.js"></script>
+        <script src="./../js/app/abi.js"></script>
+        <script src="./../js/app/stats.js"></script>
         <script>
             
             $(function () {

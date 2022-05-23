@@ -173,11 +173,11 @@ async function getAccount() {
         document.getElementById('buy_echp_div').hidden = false;
         document.getElementById('nft_info_card').hidden = false
 
-        if (totalSupply >= 30) { //750
+        if (totalSupply >= 750) { //750
             document.getElementById('current_price').innerHTML = "700" 
-        } else if (totalSupply >= 20) { //500
+        } else if (totalSupply >= 500) { //500
             document.getElementById('current_price').innerHTML = "600"
-        } else if (totalSupply >= 10) { //250
+        } else if (totalSupply >= 250) { //250
             document.getElementById('current_price').innerHTML = "500"
         } else {
             document.getElementById('current_price').innerHTML = "400"

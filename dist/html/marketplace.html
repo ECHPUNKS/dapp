@@ -7,7 +7,7 @@
         <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ECHPunk Minter</title>
+        <title>ECHPunk Marketplace</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -22,14 +22,14 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-96V0NKCS60');
+
         </script>
     </head>
     <body class="sb-nav-fixed bg-dark" id="body">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark justify-content-between">
             <a href="/" class="rounded mr-3 ml-3" style="text-decoration: none;letter-spacing: 2px !important;">
                 <h4 style="font-family:Digital;" class="p-0">
-                <!-- <h4 style="" class="p-0"> -->
-                    <span style="color: #BA83FC;">ECH</span><span style="color: white;">Punks Minter</span>
+                    <span style="color: #BA83FC;">ECH</span><span style="color: white;">Punks Marketplace</span>
                 </h4>
             </a>
             <!-- Sidebar Toggle-->
@@ -81,13 +81,13 @@
                                             <div class="sb-nav-link-icon"><i class="fab fa-home"></i></div>
                                             Home
                                         </a>
-                                        <a class="nav-link" href="/marketplace" target="">
-                                            <div class="sb-nav-link-icon"><i class="fab fa-home"></i></div>
-                                            Marketplace
-                                        </a>
                                         <a class="nav-link" href="/stats" target="">
                                             <div class="sb-nav-link-icon"><i class="fab fa-home"></i></div>
                                             Stats
+                                        </a>
+                                        <a class="nav-link" href="/minter" target="">
+                                            <div class="sb-nav-link-icon"><i class="fab fa-home"></i></div>
+                                            Minter
                                         </a>
                                         <a class="nav-link" href="https://t.me/ECHPunksClubOfficial" target="_blank">
                                             <div class="sb-nav-link-icon"><i class="fab fa-telegram-plane"></i></div>
@@ -107,107 +107,35 @@
             <div id="layoutSidenav_content">
             <main>
             <div class="container-fluid px-4">
-                <div class="row pt-2">
-                    <div class="col-md-6" id="">
-                        <div id="enableMeta" class="card bg-secondary rounded border-dark text-white mb-2">
-                            <div class="card-body text-center p-1" id="">
+                <!-- <a href="/minter"><< Back to Minter</a><Br>
+                <a href="/stats"><< Back to Stats</a> -->
+
+                <div class="row justify-content-center pt-2">
+                    <div class="col-md-12 pt-4" id="button_column">
+                        <div id="enableMeta" class="card rounded border-dark text-white mb-2">
+                            <div class="card-body text-center p-1" id="connect_button_div" style="background-color: #242424 !important;">
                                 <button class="enableEthereumButton btn btn-sm btn-primary border border-primary" id="buttonmeta"
                                     type="button">
                                     CONNECT WALLET
                                 </button>
                             </div>
                         </div>
-
-                        <div class="card bg-secondary rounded border-dark text-white mb-2">
-                            <div class="card-body text-center pt-0" id="">
-                                <img id="image_display" class="img-fluid rounded mt-2 p-5" style="width:350px" src="./../assets/images/logos/logo2.png" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="row" id="mint_row">
-                            <div class="col-12">
-                                <div hidden class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
-                                    <div class="card-body text-center pt-3" id="">
-                                        <h6>CURRENTLY MINTING</h6>
-                                        <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2>
-                                        <div class="col-12">
-                                            <div id="">
-                                                <p>
-                                                    <b>COST:</b><br>
-                                                    <span id="current_price"></span> ECH<br>
-                                                    25,000,000 ECHP
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div id="row_accordion2">
-                                    <div class="card bg-secondary rounded border-dark text-white mb-2">
-                                        <div id="headingOne3" style="background-color:#3E4145;">
-                                        </div>
-                                        <div>
-                                            <div class="card-body text-center" style="">
-                                                <div class="card-body text-center" id="">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div id="">
-                                                                <button disabled id="mint_button" onclick="publicMint()" class="btn btn-primary">MINT</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div hidden class="row mt-3" id="approve_button">
-                                                        <div class="col-12">
-                                                            <div id="approve_button_div">
-                                                                <button id="approve_button_button" onclick="approve_account()" class="btn btn-primary">APPROVE</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div hidden class="row" id="prices_div">
-                                                        <div class="col-12">
-                                                            <div id="">
-                                                                <p>Cost</p>
-                                                                <p>ECH: <span id="current_price"></span></p>
-                                                                <p>ECHP: 25,000,000</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div hidden id="load_button_div" class="card bg-secondary rounded border-dark text-white mb-2">
+                           <div class="card-body text-center p-1" id="" style="background-color: #242424 !important;">
+                                    <button id="mint_button" onclick="loadMetadata()" class="btn btn-sm btn-danger">LOAD DATA</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row pt-2">
-                                
-                    <div hidden id="my_echpunks_div" >
-                        <div class="card bg-secondary rounded border-dark text-white mb-2">
-                            <div id="headingOne3"
-                                style="background-color:#3E4145;">
-                                <div class="card-title text-center" style="background-color: #3E4145 !important; cursor: pointer;">
-                                    <b class="ml-2 mb-0">MY ECHPUNKS</b>
-                                </div>
-                            </div>
-                            <div>
-                                <div id="feed_row_accordion" class="card-body text-center">
-                                    <div class="card-body text-center" id="">
-                                        <p><a href="/stats">>> SEE MORE STATS <<</a></p>
-                                        
-                                        <div id="myPunks" class="row justify-content-center">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- <div class="row justify-content-center text-white pt-2">
+                    <div id="myPunks" class="row text-center justify-content-center">
+                                                    </div>
+                </div> -->
+                <div class="row justify-content-center text-white pt-2">
+                    <div id="myListedPunks" class="row text-center justify-content-center">
+                                                    </div>
                 </div>
-            </div>
+                
             </main>
             <footer class="py-4 bg-dark text-white mt-auto">
                 <div class="container-fluid px-4">
@@ -241,7 +169,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="./../js/app/abi.js"></script>
-        <script src="./../js/app/app.js"></script>
+        <script src="./../js/app/marketplace2.js"></script>
         <script>
             
             $(function () {

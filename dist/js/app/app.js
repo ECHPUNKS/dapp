@@ -188,7 +188,7 @@ async function getAccount() {
 
         totalSupplyForPrice = totalSupply;
 
-        getImage(parseInt(totalSupply))
+        // getImage(parseInt(totalSupply))
         
         if (totalSupply == 1000) {
             document.getElementById('mint_button').disabled = true

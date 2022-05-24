@@ -138,8 +138,8 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 // console.log('supply for price ' + typeof(totalSupplyForPrice))
 
 ethereumButton.addEventListener('click', () => {
-    document.getElementById('enableMeta').hidden = true
-    document.getElementById('load_button_div').hidden = false
+    // document.getElementById('enableMeta').hidden = true
+    // document.getElementById('load_button_div').hidden = false
     getAccount()
 })
 
@@ -151,9 +151,14 @@ let myTokensArray = {}
 let MyMetadataArray = []
 let myListedPunks = []
 let tempListedPunks = []
+let mySoldPunks = []
 
 // get data for connected wallet
 async function getAccount() {
+
+    document.getElementById('buttonmeta').disabled = true
+    document.getElementById('buttonmeta').innerHTML = "LOADING.."
+
     const network = await web3Instance.eth.net.getId()
     // console.log(network)
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
@@ -170,19 +175,17 @@ async function getAccount() {
 
     const read = parseInt(balance) / 10 ** 18
 
-    let _totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _fetchSellingMarketItems;
+    let _tokensByOwner, _ECHP_Balance, _fetchSellingMarketItems;
     _fetchSellingMarketItems = promisify(fetchSellingMarketItems_ => MARKETPLACE_Contract.methods.fetchSellingMarketItems(currentAccount).call(fetchSellingMarketItems_))
-
-    _totalSupply = promisify(totalSupply_ => ECHPUNKS_NFT_Contract.methods.totalSupply().call(totalSupply_))
     _tokensByOwner = promisify(tokensByOwner_ => ECHPUNKS_NFT_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner_))
-    _isApproved = promisify(isApproved_ => ECHP_Contract.methods.allowance(currentAccount, ECHPUNKS_NFT_address).call(isApproved_))
     _ECHP_Balance = promisify(ECHP_Balance_ => ECHP_Contract.methods.balanceOf(currentAccount).call(ECHP_Balance_))
 
-    Promise.all([_totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _fetchSellingMarketItems])
-    .then(function ([totalSupply, tokensByOwner, isApproved, ECHP_Balance, fetchSellingMarketItems]) {
+    Promise.all([_tokensByOwner, _ECHP_Balance, _fetchSellingMarketItems])
+    .then(function ([tokensByOwner, ECHP_Balance, fetchSellingMarketItems]) {
         console.log(fetchSellingMarketItems)
         // displayMyListedPunks(fetchSellingMarketItems)
         tempListedPunks = fetchSellingMarketItems
+
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
         document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance: <br>" + readECHPBalance + "</p>"
 
@@ -195,6 +198,8 @@ async function getAccount() {
             bestFetch(i)
         }
     }).then(function () {
+    document.getElementById('enableMeta').hidden = true
+    document.getElementById('load_button_div').hidden = false
     })
 
     showAccount.innerHTML = "<p>My Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
@@ -214,10 +219,11 @@ const loadMetadata = () => {
     
     document.getElementById('button_column').hidden = true;
     document.getElementById('my_echpunks_header').hidden = false;
-    document.getElementById('sale_header').hidden = false;
+    // document.getElementById('sale_header').hidden = false;
 
     if (myTokensArray.length > 0) {
         for(i=0; i<myTokensArray.length; i++) {
+            let earings = ""
             let background = ""
             if (MyMetadataArray[i].attributes[0].value === "Background 5") {
                 background = "5"
@@ -234,32 +240,32 @@ const loadMetadata = () => {
             }
 
             $(
-            "<div class='col-12 col-md-4 border border-secondary mt-2'>" +
+            "<div class='col-12 col-sm-4 col-md-3 border border-secondary mt-2'>" +
                 "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/testpunks/" + myTokensArray[i] + ".png'>" +
                 "<p>" + MyMetadataArray[i].name + "</p>" +
-                "<p>Background: " + background + "</p>" +
-                "<p>Skin: " + MyMetadataArray[i].attributes[1].value + "</p>" +
-                "<p>Hair/Hat: " + MyMetadataArray[i].attributes[2].value + "</p>" +
-                "<p>Eyes: " + MyMetadataArray[i].attributes[3].value + "</p>" +
-                "<p>Mouth: " + MyMetadataArray[i].attributes[4].value + "</p>" +
-                "<p>Accessory: " + MyMetadataArray[i].attributes[5].value + "</p>" +
-                "<p>Outfit: " + MyMetadataArray[i].attributes[6].value + "</p>" +
+                "<p><b>Background:</b> " + background + "<br>" +
+                "<b>Skin:</b> " + MyMetadataArray[i].attributes[1].value + "<br>" +
+                "<b>Hair/Hat:</b> " + MyMetadataArray[i].attributes[2].value + "<br>" +
+                "<b>Eyes:</b> " + MyMetadataArray[i].attributes[3].value + "<br>" +
+                "<b>Mouth:</b> " + MyMetadataArray[i].attributes[4].value + "<br>" +
+                "<b>Accessory:</b> " + MyMetadataArray[i].attributes[5].value + "<br>" +
+                "<b>Outfit:</b> " + MyMetadataArray[i].attributes[6].value + "</p>" +
                 "<hr>" +
                 "<div id='' class='row justify-content-center'>" +
-                    "<div class='col-8 text-center'>" +
-                        "<p>Sell this ECHPunk For:</p>" +
-                        "<input class='w-50 text-center'type='text' value='' id='price_input" + myTokensArray[i] + "' placeholder='price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
-                        "<p>Echelon</p>" +
+                    "<div class='col-12 text-center'>" +
+                        "<p>Sell this Punk</p>" +
+                        "<input class='w-50 text-center'type='text' value='' id='price_input" + myTokensArray[i] + "' placeholder='ECH Price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
+                        // "<p>Echelon</p>" +
                     "</div>" +
                 "</div>" +
-                "<div class='row'>" +
+                // "<div class='row'>" +
                     "<div class='col-12 mb-2 mt-2'>" +
-                        "<button id='' onclick='createListing("+ myTokensArray[i]+")' class='btn btn-primary'>Sell</button>" +
-                    "</div>" +
-                    "<div class='col-12 mb-2'>" +
+                        "<button id='' onclick='createListing("+ myTokensArray[i]+")' class='btn btn-primary mr-1'>Sell</button>" +
                         "<button id='' onclick='approveForSale("+ myTokensArray[i]+")' class='btn btn-primary'>Approve</button>" +
                     "</div>" +
-                "</div>" +
+                    // "<div class='col-6 mb-2'>" +
+                    // "</div>" +
+                // "</div>" +
             "</div>"
             ).appendTo('#myPunks');
         }
@@ -287,27 +293,61 @@ function displayMyListedPunks() {
     for (i = 0; i < tempListedPunks.length; i++) {
         if (tempListedPunks[i].canceled != true && tempListedPunks[i].sold != true) {
         
-        myListedPunks.push({"NFTTokenID": tempListedPunks[i].tokenId, "MARKETPLACEID": tempListedPunks[i].marketItemId, "PRICE": (tempListedPunks[i].price)})
+            document.getElementById('my_listed_punks_row').hidden = false;
+            myListedPunks.push({
+                "NFTTokenID": tempListedPunks[i].tokenId, 
+                "MARKETPLACEID": tempListedPunks[i].marketItemId, 
+                "PRICE": (tempListedPunks[i].price)
+            })
         }
 
+        if (tempListedPunks[i].sold == true) {
+            document.getElementById('my_sold_punks_row').hidden = false;
+            mySoldPunks.push({
+                "NFTTokenID": tempListedPunks[i].tokenId, 
+                "MARKETPLACEID": tempListedPunks[i].marketItemId, 
+                "PRICE": (tempListedPunks[i].price)
+            })
         }
+
+    }
+
     console.log('mylistedpunks ',myListedPunks)
     if (myListedPunks.length > 0) {
         for(i=0; i<myListedPunks.length; i++) {
             console.log(myListedPunks[i].tokenId )
             $(
-            "<div class='col-12 col-md-3 border border-secondary mt-2'>" +
+            "<div class='col-12 col-sm-4 col-md-3 border border-secondary mt-2'>" +
                 "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/testpunks/" + myListedPunks[i].NFTTokenID + ".png'>" +
-                "<p>Punk # " + myListedPunks[i].NFTTokenID + "</p>" +   
+                "<p>ECHPunk #" + myListedPunks[i].NFTTokenID + "</p>" +   
                 "<p>Listed for " + myListedPunks[i].PRICE / 10 ** 18 + " ECH </p>" +   
                 "<div id=''>" +
-                    "<button id='' onclick='cancelListing("+ myListedPunks[i].MARKETPLACEID +")' class='btn btn-primary'>Cancel Listing</button>" +
+                    "<button id='' onclick='cancelListing("+ myListedPunks[i].MARKETPLACEID +")' class='btn btn-primary mb-2'>Cancel Listing</button>" +
                 "</div>" +
             "</div>"
             ).appendTo('#myListedPunks');
         }
     } else {
         document.getElementById('myListedPunks').innerHTML = ""
+    }
+
+
+    if (mySoldPunks.length > 0) {
+        for(i=0; i<mySoldPunks.length; i++) {
+            // console.log(mySoldPunks[i].tokenId )
+            $(
+            "<div class='col-12 col-sm-4 col-md-3 border border-secondary mt-2'>" +
+                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/testpunks/" + mySoldPunks[i].NFTTokenID + ".png'>" +
+                "<p class'm-0'>ECHPunk #" + mySoldPunks[i].NFTTokenID + "</p>" +   
+                "<p>Sold for " + mySoldPunks[i].PRICE / 10 ** 18 + " ECH </p>" +   
+                // "<div id=''>" +
+                //     "<button id='' onclick='cancelListing("+ mySoldPunks[i].MARKETPLACEID +")' class='btn btn-primary'>Cancel Listing</button>" +
+                // "</div>" +
+            "</div>"
+            ).appendTo('#mySoldPunks');
+        }
+    } else {
+        document.getElementById('mySoldPunks').innerHTML = ""
     }
 
 }

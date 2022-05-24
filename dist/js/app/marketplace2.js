@@ -100,8 +100,8 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 // console.log('supply for price ' + typeof(totalSupplyForPrice))
 
 ethereumButton.addEventListener('click', () => {
-    document.getElementById('enableMeta').hidden = true
-    document.getElementById('load_button_div').hidden = false
+    // document.getElementById('enableMeta').hidden = true
+    // document.getElementById('load_button_div').hidden = false
     getAccount()
 })
 
@@ -116,6 +116,10 @@ let tempListedPunks = []
 
 // get data for connected wallet
 async function getAccount() {
+
+    document.getElementById('buttonmeta').disabled = true
+    document.getElementById('buttonmeta').innerHTML = "LOADING.."
+
     const network = await web3Instance.eth.net.getId()
     // console.log(network)
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
@@ -157,6 +161,8 @@ async function getAccount() {
             bestFetch(i)
         }
     }).then(function () {
+        document.getElementById('enableMeta').hidden = true
+        document.getElementById('load_button_div').hidden = false
     })
 
     showAccount.innerHTML = "<p>Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
@@ -173,50 +179,7 @@ async function getAccount() {
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const loadMetadata = () => {
-    
     document.getElementById('button_column').hidden = true;
-
-    // if (myTokensArray.length > 0) {
-    //     for(i=0; i<myTokensArray.length; i++) {
-    //         let background = ""
-    //         if (MyMetadataArray[i].attributes[0].value === "Background 5") {
-    //             background = "5"
-    //         } else if (MyMetadataArray[i].attributes[0].value === "Background 4") {
-    //             background = "4"
-    //         } else if (MyMetadataArray[i].attributes[0].value === "Background 3") {
-    //             background = "3"
-    //         } else if (MyMetadataArray[i].attributes[0].value === "Background 2") {
-    //             background = "2"
-    //         } else if (MyMetadataArray[i].attributes[0].value === "Background 1") {
-    //             background = "1"
-    //         } else {
-    //             background = MyMetadataArray[i].attributes[0].value
-    //         }
-
-    //         $(
-    //         "<div class='col-12 col-md-3 border border-secondary mt-2'>" +
-    //             "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/testpunks/" + myTokensArray[i] + ".png'>" +
-    //             "<p>" + MyMetadataArray[i].name + "</p>" +
-    //             "<p>Background: " + background + "</p>" +
-    //             "<p>Skin: " + MyMetadataArray[i].attributes[1].value + "</p>" +
-    //             "<p>Hair/Hat: " + MyMetadataArray[i].attributes[2].value + "</p>" +
-    //             "<p>Eyes: " + MyMetadataArray[i].attributes[3].value + "</p>" +
-    //             "<p>Mouth: " + MyMetadataArray[i].attributes[4].value + "</p>" +
-    //             "<p>Accessory: " + MyMetadataArray[i].attributes[5].value + "</p>" +
-    //             "<p>Outfit: " + MyMetadataArray[i].attributes[6].value + "</p>" +
-    //             "<div id=''>" +
-    //                 "<form>"+
-    //                     "<input type='text' value='' id='price_input" + myTokensArray[i] + "' placeholder='price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
-    //                 "</form>" +
-    //                 "<button id='' onclick='createListing("+ myTokensArray[i]+")' class='btn btn-primary'>Create</button>" +
-    //                 "<button id='' onclick='approveForSale("+ myTokensArray[i]+")' class='btn btn-primary'>Approve</button>" +
-    //             "</div>" +
-    //         "</div>"
-    //         ).appendTo('#myPunks');
-    //     }
-    // } else {
-    //     document.getElementById('myPunks').innerHTML = "You do not own any ECHPunks or your NFT's are on the market"
-    // }
     displayMyListedPunks()
 }
 
@@ -237,14 +200,13 @@ async function bestFetch(i) {
 function displayMyListedPunks() {
     for (i = 0; i < tempListedPunks.length; i++) {
         if (tempListedPunks[i].canceled != true) {
-        
-        myListedPunks.push({
-        "NFTTokenID": tempListedPunks[i].tokenId, 
-        "MARKETPLACEID": tempListedPunks[i].marketItemId, 
-        "PRICE": (tempListedPunks[i].price)})
+            myListedPunks.push({
+                "NFTTokenID": tempListedPunks[i].tokenId, 
+                "MARKETPLACEID": tempListedPunks[i].marketItemId, 
+                "PRICE": (tempListedPunks[i].price)
+            })
         }
-
-        }
+    }
     console.log('mylistedpunks ',myListedPunks)
     if (myListedPunks.length > 0) {
         for(i=0; i<myListedPunks.length; i++) {
@@ -255,7 +217,7 @@ function displayMyListedPunks() {
                 "<p>Punk # " + myListedPunks[i].NFTTokenID + "</p>" +   
                 "<p>Price: " + myListedPunks[i].PRICE / 10 ** 18 + " ECH </p>" +   
                 "<div id=''>" +
-                    "<button id='' onclick='purchaseListing("+ myListedPunks[i].MARKETPLACEID + "," + myListedPunks[i].PRICE +")' class='btn btn-primary'>Purchase</button>" +
+                    "<button id='' onclick='purchaseListing("+ myListedPunks[i].MARKETPLACEID + "," + myListedPunks[i].PRICE +")' class='btn btn-primary mb-2'>Purchase</button>" +
                 "</div>" +
             "</div>"
             ).appendTo('#myListedPunks');

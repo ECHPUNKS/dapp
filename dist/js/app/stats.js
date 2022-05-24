@@ -92,7 +92,9 @@ console.log(price)
 console.log("price in gwei: ", (price * 10 ** 18));
 
     // let number = document.getElementById('number_input').value
-MARKETPLACE_Contract.methods.createMarketItem(ECHPUNKS_NFT_address, idToCreate.toString(), (parseInt(price) * 10 ** 18).toString()).send({from: currentAccount}).on('transactionHash', tx => {
+MARKETPLACE_Contract.methods.createMarketItem(ECHPUNKS_NFT_address, idToCreate.toString(), Web3.utils.toWei(price, 'ether').toString()).send({from: currentAccount}).on('transactionHash', tx => {
+
+
 
         console.log("Transaction: ", tx);
 
@@ -182,7 +184,7 @@ async function getAccount() {
         // displayMyListedPunks(fetchSellingMarketItems)
         tempListedPunks = fetchSellingMarketItems
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
-        document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance:<br>" + readECHPBalance + "</p>"
+        document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance: <br>" + readECHPBalance + "</p>"
 
         myTokensArray = tokensByOwner
         

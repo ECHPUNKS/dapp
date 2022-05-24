@@ -70,7 +70,11 @@ async function getNetworkId() {
 
 function purchaseListing(marketplaceId, price) {
     // let number = document.getElementById('marketId_number_to_purchase_input').value
-    MARKETPLACE_Contract.methods.createMarketSale(ECHPUNKS_NFT_address, marketplaceId.toString()).send({from: currentAccount, value: price.toString()}).on('transactionHash', tx => {
+    // let val = Web3.utils.fromWei(price, 'ether').toString()
+    console.log(typeof(price))
+    let val = (price / 10 ** 18).toString()
+    // console.log(typeof(val))
+    MARKETPLACE_Contract.methods.createMarketSale(ECHPUNKS_NFT_address, marketplaceId.toString()).send({from: currentAccount, value: Web3.utils.toWei(val, 'ether').toString()}).on('transactionHash', tx => {
 
         console.log("Transaction: ", tx);
         // disableButtons()

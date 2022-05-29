@@ -199,6 +199,7 @@ async function getAccount() {
         document.getElementById('my_echpunks_div').hidden = false
 
         if (tokensByOwner.length >= 1) {
+            console.log(tokensByOwner)
             document.getElementById('myPunks').innerHTML = "";
             for (i = 0; i < tokensByOwner.length; i++) {
                 $(
@@ -289,3 +290,29 @@ async function bestFetch(metadataNumber) {
         console.log('Error!', e);
     }
 }
+
+
+
+
+// function getHash(address, data) {
+//     // let hexData = web3Instance.utils.utf8ToHex(data)
+//     let hexData = web3Instance.utils.asciiToHex(data)
+//     let backToString = web3Instance.utils.hexToAscii (hexData)
+//     let number = ""+1
+//     // let number = Math.random() * 10 ** 16
+//     console.log(number)
+//     let salt = web3Instance.utils.sha3(""+number)
+//     console.log('sha3 salt: ', salt)
+
+//     console.log('data hex: ', hexData)
+//     console.log('Should say "hello": ', hexData)
+
+//     // console.log(salt)
+//     return web3Instance.utils.keccak256(address, data, salt);
+
+// }
+
+// console.log(getHash("0x0fC5025C764cE34df352757e82f7B5c4Df39A836", "hello"))
+
+
+

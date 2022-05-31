@@ -20,6 +20,11 @@ const ECHPUNKS_NFT_address = '0x7f11d149171711904f6c497A9ed0E8Bd4D895551';
 const ECHPUNKS_NFT_address_abi = abi;
 const ECHPUNKS_NFT_Contract = new web3Instance.eth.Contract(ECHPUNKS_NFT_address_abi, ECHPUNKS_NFT_address);
 
+//rinkeby
+const ECHPUNKS_NFT2_address = '0x59b62377D9ba3f4fB4F4df8Ec2b771984CEaf86c';
+const ECHPUNKS_NFT2_address_abi = abi2;
+const ECHPUNKS_NFT2_Contract = new web3Instance.eth.Contract(ECHPUNKS_NFT2_address_abi, ECHPUNKS_NFT2_address);
+
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Promisify
@@ -63,7 +68,7 @@ let totalSupplyForPrice;
 
 // approve function
 function approve_account() {
-    ECHP_Contract.methods.approve(ECHPUNKS_NFT_address, "100000000000000000000000000").send({from: currentAccount}).on('transactionHash', tx => { // disableButtons()
+    ECHP_Contract.methods.approve(ECHPUNKS_NFT2_address, "100000000000000000000000000").send({from: currentAccount}).on('transactionHash', tx => { // disableButtons()
         document.getElementById('approve_button_button').disabled = true;
 
     }).then(receipt => {
@@ -87,13 +92,13 @@ function approve_account() {
 // find price for current nft
 const findPrice = () => {
     if (totalSupplyForPrice >= 750) { // 750
-        return 700000000000000000000 // 700000000000000000000
+        return 100000000000000000000 // 700000000000000000000
     } else if (totalSupplyForPrice >= 500) { // 500
-        return 600000000000000000000 // 600000000000000000000
+        return 100000000000000000000 // 600000000000000000000
     } else if (totalSupplyForPrice >= 250) { // 250
-        return 500000000000000000000 // 500000000000000000000
+        return 100000000000000000000 // 500000000000000000000
     } else {
-        return 400000000000000000000 // 400000000000000000000
+        return 100000000000000000000 // 400000000000000000000
     }
 }
 
@@ -103,8 +108,10 @@ const findPrice = () => {
 
 // mint function
 function publicMint() {
-    ECHPUNKS_NFT_Contract.methods.mint((parseInt(totalSupplyForPrice) + 1).toString())
-    .send({from: currentAccount, value: findPrice()}).on('transactionHash', tx => {
+    const value = document.getElementById('tokens_to_mint').value
+    const tokensToMint = value * 100000000000000000000
+    ECHPUNKS_NFT2_Contract.methods.mint(value)
+    .send({from: currentAccount, value: tokensToMint}).on('transactionHash', tx => {
         console.log("Transaction: ", tx);
         disableButtons()
     }).then(receipt => {
@@ -135,6 +142,7 @@ ethereumButton.addEventListener('click', () => {
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let currentAccount = ""
+let globalTotalSupply = 0
 
 // get data for connected wallet
 async function getAccount() {
@@ -155,38 +163,45 @@ async function getAccount() {
     const read = parseInt(balance) / 10 ** 18
 
     // fetch contract data
-    let _totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable;
-    _totalSupply = promisify(totalSupply_ => ECHPUNKS_NFT_Contract.methods.totalSupply().call(totalSupply_))
-    _isPurchasable = promisify(isPurchasable_ => ECHPUNKS_NFT_Contract.methods.isPurchasable().call(isPurchasable_))
+    let _totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable, _tokensByOwner2;
+    _totalSupply = promisify(totalSupply_ => ECHPUNKS_NFT2_Contract.methods.totalSupply().call(totalSupply_))
+    _isPurchasable = promisify(isPurchasable_ => ECHPUNKS_NFT2_Contract.methods.isPurchasable().call(isPurchasable_))
     _tokensByOwner = promisify(tokensByOwner_ => ECHPUNKS_NFT_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner_))
-    _isApproved = promisify(isApproved_ => ECHP_Contract.methods.allowance(currentAccount, ECHPUNKS_NFT_address).call(isApproved_))
+    _tokensByOwner2 = promisify(tokensByOwner2_ => ECHPUNKS_NFT2_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner2_))
+    _isApproved = promisify(isApproved_ => ECHP_Contract.methods.allowance(currentAccount, ECHPUNKS_NFT2_address).call(isApproved_))
     _ECHP_Balance = promisify(ECHP_Balance_ => ECHP_Contract.methods.balanceOf(currentAccount).call(ECHP_Balance_))
 
-    Promise.all([_totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable])
-    .then(function ([totalSupply, tokensByOwner, isApproved, ECHP_Balance, isPurchasable]) {
-
+    Promise.all([_totalSupply, _tokensByOwner, _isApproved, _ECHP_Balance, _isPurchasable, _tokensByOwner2])
+    .then(function ([totalSupply, tokensByOwner, isApproved, ECHP_Balance, isPurchasable, tokensByOwner2]) {
+    // console.log(tokensByOwner2.length)
+        globalTotalSupply = totalSupply
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
         document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance<br>" + readECHPBalance + "</p>"
 
-        console.log('is purchasable ',isPurchasable)
+        // console.log('is purchasable ',isPurchasable)
 
         document.getElementById('buy_echp_div').hidden = false;
         document.getElementById('nft_info_card').hidden = false
-
-        if (totalSupply >= 750) { //750
-            document.getElementById('current_price').innerHTML = "700" 
-        } else if (totalSupply >= 500) { //500
-            document.getElementById('current_price').innerHTML = "600"
-        } else if (totalSupply >= 250) { //250
-            document.getElementById('current_price').innerHTML = "500"
-        } else {
-            document.getElementById('current_price').innerHTML = "400"
+        let mintAmount = document.getElementById('tokens_to_mint').value;
+        if (counter == 0) {
+            if (totalSupply >= 750) { //750
+                document.getElementById('current_price').innerHTML = "100" 
+            } else if (totalSupply >= 500) { //500
+                document.getElementById('current_price').innerHTML = "100"
+            } else if (totalSupply >= 250) { //250
+                document.getElementById('current_price').innerHTML = "100"
+            } else {
+                document.getElementById('current_price').innerHTML = "100"
+            }
         }
         
         document.getElementById('current_mint_card').hidden = false
         document.getElementById('current_mint_number').innerHTML = parseInt(totalSupply) + 1
 
         totalSupplyForPrice = totalSupply;
+
+// document.getElementById('tokens_to_mint').value;
+
 
         // getImage(parseInt(totalSupply))
         
@@ -199,36 +214,66 @@ async function getAccount() {
         document.getElementById('my_echpunks_div').hidden = false
 
         if (tokensByOwner.length >= 1) {
-            console.log(tokensByOwner)
+            const sortedArray1 = tokensByOwner;
+            sortedArray1.sort(function(a, b) {
+                return a - b;
+            });
+
+            // console.log(sortedArray1);
+            // console.log(tokensByOwner)
             document.getElementById('myPunks').innerHTML = "";
             for (i = 0; i < tokensByOwner.length; i++) {
                 $(
                 "<div class='col-4 col-md-2'>" +
-                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + tokensByOwner[i]+ ".png'>" +
-                "<p>#" + tokensByOwner[i] + "</p>" +
+                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/testpunks/" + sortedArray1[i]+ ".png'>" +
+                "<p>#" + sortedArray1[i] + "</p>" +
                 "</div>"
                 ).appendTo('#myPunks');
             }
         } else {
-            document.getElementById('myPunks').innerHTML = "You don't own any ECHPunks"
+            // document.getElementById('myPunks').innerHTML = "You don't own any ECHPunks"
+        }
+        if (tokensByOwner2.length >= 1) {
+            // console.log(tokensByOwner2)
+            const sortedArray = tokensByOwner2;
+            sortedArray.sort(function(a, b) {
+                return a - b;
+            });
+
+            // console.log('sorted array',sortedArray);
+            // document.getElementById('myPunks').innerHTML = "";
+            for (i = 0; i < tokensByOwner2.length; i++) {
+            // console.log(tokensByOwner2[i])
+                $(
+                "<div class='col-4 col-md-2'>" +
+                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2' src='./../../assets/images/punks2/" + sortedArray[i]+ ".png'>" +
+                "<p>#" + sortedArray[i] + "</p>" +
+                "</div>"
+                ).appendTo('#myPunks');
+            }
+        } else {
+            // document.getElementById('myPunks').innerHTML = "You don't own any ECHPunks"
         }
         
         // check approval
-        if (parseInt(isApproved) >= 10000000000) {
-            document.getElementById('approve_button').hidden = true
-            document.getElementById('mint_button').disabled = false
+        // if (parseInt(isApproved) >= 10000000000) {
+        //     document.getElementById('approve_button').hidden = true
+        //     document.getElementById('mint_button').disabled = false
             
-        } else {
-            document.getElementById('approve_button').hidden = false
-            document.getElementById('mint_button').disabled = true
-        }
+        // } else {
+        //     document.getElementById('approve_button').hidden = false
+        //     document.getElementById('mint_button').disabled = true
+        // }
 
-        // check is purchasable
+        // // check is purchasable
         if (isPurchasable == false) {
             document.getElementById('mint_button').disabled = true
             // document.getElementById('approve_button').hidden = true
 
+        } else {
+            document.getElementById('mint_button').disabled = false
         }
+        refreshAccount()
     })
 
     showAccount.innerHTML = "<p>My Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
@@ -243,7 +288,7 @@ async function getAccount() {
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-ECHPUNKS_NFT_Contract.events.Mint({fromBlock: "latest"}).on("connected", function (subscriptionId) {
+ECHPUNKS_NFT2_Contract.events.Mint({fromBlock: "latest"}).on("connected", function (subscriptionId) {
     return;
 }).on('data', function (event) {
     getAccount()
@@ -252,7 +297,7 @@ ECHPUNKS_NFT_Contract.events.Mint({fromBlock: "latest"}).on("connected", functio
 }).on('error', function (error, receipt) {
 });
 
-ECHPUNKS_NFT_Contract.events.MakePurchasable({fromBlock: "latest"}).on("connected", function (subscriptionId) {
+ECHPUNKS_NFT2_Contract.events.MakePurchasable({fromBlock: "latest"}).on("connected", function (subscriptionId) {
     return;
 }).on('data', function (event) {
     document.getElementById('mint_button').disabled = false;
@@ -314,5 +359,48 @@ async function bestFetch(metadataNumber) {
 
 // console.log(getHash("0x0fC5025C764cE34df352757e82f7B5c4Df39A836", "hello"))
 
+$(document).ready(function () {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        if ($input.val() < 5) {
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+        }
+    });
+});
 
 
+function getUpdatedPriceUp() {
+    let mintAmount = document.getElementById('tokens_to_mint').value;
+    // console.log(document.getElementById('tokens_to_mint').value)
+    // console.log(mintAmount)
+    if (mintAmount < 5) {
+        document.getElementById('current_price').innerHTML = (parseInt(mintAmount) + 1) * 100
+    }
+}
+function getUpdatedPriceDown() {
+    let mintAmount = document.getElementById('tokens_to_mint').value;
+    console.log(document.getElementById('tokens_to_mint').value)
+    console.log(mintAmount)
+    if (mintAmount <= 5 && mintAmount > 1) {
+        document.getElementById('current_price').innerHTML = (parseInt(mintAmount) - 1) * 100
+    }
+}
+let counter = 0
+function refreshAccount() {
+    setTimeout(() => {
+        counter++
+        console.log('refresh', counter)
+        getAccount()
+        return;
+    }, "10000")
+}

@@ -132,15 +132,14 @@
                                     <div class="card-body text-center pt-3" id="">
                                         <h6>CURRENTLY MINTING</h6>
                                         <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2>
-                                        <div class="col-12">
+                                        <!-- <div class="col-12">
                                             <div id="">
                                                 <p>
                                                     <b>COST:</b><br>
-                                                    <span id="current_price"></span> ECH<br>
-                                                    1,000,000 ECHP
+                                                    <span id="current_price"></span> ECHELON EACH
                                                 </p>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 
@@ -152,9 +151,26 @@
                                             <div class="card-body text-center" style="">
                                                 <div class="card-body text-center" id="">
                                                     <div class="row">
+                                                    <div class="col-12">
+                                                        <div id="">
+                                                            <p>
+                                                                <b>COST:</b><br>
+                                                                <span id="current_price"></span> ECH
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                         <div class="col-12">
                                                             <div id="">
                                                                 <button disabled id="mint_button" onclick="publicMint()" class="btn btn-primary">MINT</button>
+                                                            </div>
+                                                            <div id="">
+                                                            <div class="number">
+                                                                <span class="minus"><button class="btn-dark" onclick="getUpdatedPriceDown()">-</button></span>
+                                                                 <input class='w-25 mt-2 text-center'type='number' value='1' id='tokens_to_mint'>
+                                                                <span class="plus"><button class="btn-dark" onclick="getUpdatedPriceUp()">+</button></span>
+                                                                    </div>
+                                                                <!-- <input type="number" value="5" placeholder="5" id="tokens_to_mint"> -->
+                                                                <!-- <input class='w-50 input-group-sm text-center'type='text' value='' id='tokens_to_mint' placeholder='NFT Amount' onkeypress='return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13)?null:event.charCode>=48&&event.charCode<=57'name='itemConsumption'> -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -170,7 +186,6 @@
                                                             <div id="">
                                                                 <p>Cost</p>
                                                                 <p>ECH: <span id="current_price"></span></p>
-                                                                <p>ECHP: 25,000,000</p>
                                                             </div>
                                                         </div>
                                                     </div>

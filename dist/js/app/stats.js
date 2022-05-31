@@ -22,6 +22,11 @@ const MARKETPLACE_address = '0x2fee9693d3C7B407Af913053521242cA36F1bAeF';
 const MARKETPLACE_address_abi = marketplace_abi;
 const MARKETPLACE_Contract = new web3Instance.eth.Contract(MARKETPLACE_address_abi, MARKETPLACE_address);
 
+const ECHPUNKS_NFT2_address = '0x59b62377D9ba3f4fB4F4df8Ec2b771984CEaf86c';
+const ECHPUNKS_NFT2_address_abi = abi2;
+const ECHPUNKS_NFT2_Contract = new web3Instance.eth.Contract(ECHPUNKS_NFT2_address_abi, ECHPUNKS_NFT2_address);
+
+
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const promisify = (inner) =>
@@ -66,29 +71,53 @@ async function getNetworkId() {
     }
 }
 
-function approveForSale(tokenToApprove) {
-    ECHPUNKS_NFT_Contract.methods.approve(MARKETPLACE_address, tokenToApprove).send({from: currentAccount}).on('transactionHash', tx => { // disableButtons()
-        // document.getElementById('approve_button_button').disabled = true;
+function approveForSale(tokenToApprove, generation) {
+// console.log(typeof(generation))
+    if (generation == 1) {
+        ECHPUNKS_NFT_Contract.methods.approve(MARKETPLACE_address, tokenToApprove).send({from: currentAccount}).on('transactionHash', tx => { // disableButtons()
+            // document.getElementById('approve_button_button').disabled = true;
 
-    }).then(receipt => {
-        if (receipt.status == '0x1' || receipt.status == 1) {
-            console.log('Transaction Successful')
-            getAccount()
-        } else {
-            // document.getElementById('approve_button_button').disabled = false;
+        }).then(receipt => {
+            if (receipt.status == '0x1' || receipt.status == 1) {
+                console.log('Transaction Successful')
+                getAccount()
+            } else {
+                // document.getElementById('approve_button_button').disabled = false;
 
-        }
-    }).catch(err => {
-        console.log('Error', err)
-    }). finally(() => {
-        console.log('approve function finished, returning')
-        return
-    })
+            }
+        }).catch(err => {
+            console.log('Error', err)
+        }). finally(() => {
+            console.log('approve function finished, returning')
+            return
+        })
+    }
+
+    if (generation === 2) {
+        ECHPUNKS_NFT2_Contract.methods.approve(MARKETPLACE_address, tokenToApprove).send({from: currentAccount}).on('transactionHash', tx => { // disableButtons()
+            // document.getElementById('approve_button_button').disabled = true;
+
+        }).then(receipt => {
+            if (receipt.status == '0x1' || receipt.status == 1) {
+                console.log('Transaction Successful')
+                getAccount()
+            } else {
+                // document.getElementById('approve_button_button').disabled = false;
+
+            }
+        }).catch(err => {
+            console.log('Error', err)
+        }). finally(() => {
+            console.log('approve function finished, returning')
+            return
+        })
+    }
 }
 
-function createListing(idToCreate) {
-let price = document.getElementById('price_input' + idToCreate.toString()).value
-console.log(price)
+function createListing(idToCreate, generation, idExtention) {
+// console.log(typeof(idExtention))
+let price = document.getElementById('price_input' + idToCreate.toString() + idExtention).value
+// console.log(price)
 console.log("price in gwei: ", (price * 10 ** 18));
 
     // let number = document.getElementById('number_input').value
@@ -113,22 +142,40 @@ MARKETPLACE_Contract.methods.createMarketItem(ECHPUNKS_NFT_address, idToCreate.t
 }
 
 
-function cancelListing(marketplaceIdNumber) {
+function cancelListing(marketplaceIdNumber, generation) {
     // let number = document.getElementById('marketId_to_cancel_input').value
-    MARKETPLACE_Contract.methods.cancelMarketItem(ECHPUNKS_NFT_address, marketplaceIdNumber).send({from: currentAccount}).on('transactionHash', tx => {
-        console.log("Transaction: ", tx);
-        // disableButtons()
-    }).then(receipt => {
-        console.log('Mined', receipt)
-        // getAccount()
-        // enableButtons()
-    }).catch(err => {
-        console.log('Error', err)
-        // getAccount()
-    }). finally(() => {
-        console.log('Transaction Finished')
-        return
-    })
+    if (generation == 1) {
+        MARKETPLACE_Contract.methods.cancelMarketItem(ECHPUNKS_NFT_address, marketplaceIdNumber).send({from: currentAccount}).on('transactionHash', tx => {
+            console.log("Transaction: ", tx);
+            // disableButtons()
+        }).then(receipt => {
+            console.log('Mined', receipt)
+            // getAccount()
+            // enableButtons()
+        }).catch(err => {
+            console.log('Error', err)
+            // getAccount()
+        }). finally(() => {
+            console.log('Transaction Finished')
+            return
+        })
+    }
+    if (generation == 2) {
+        MARKETPLACE_Contract.methods.cancelMarketItem(ECHPUNKS_NFT2_address, marketplaceIdNumber).send({from: currentAccount}).on('transactionHash', tx => {
+                console.log("Transaction: ", tx);
+                // disableButtons()
+            }).then(receipt => {
+                console.log('Mined', receipt)
+                // getAccount()
+                // enableButtons()
+            }).catch(err => {
+                console.log('Error', err)
+                // getAccount()
+            }). finally(() => {
+                console.log('Transaction Finished')
+                return
+            })
+    }
 }
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -148,7 +195,9 @@ ethereumButton.addEventListener('click', () => {
 let currentAccount = ""
 
 let myTokensArray = {}
+let myTokensArray2 = {}
 let MyMetadataArray = []
+let MyMetadataArray2 = []
 let myListedPunks = []
 let tempListedPunks = []
 let mySoldPunks = []
@@ -175,14 +224,15 @@ async function getAccount() {
 
     const read = parseInt(balance) / 10 ** 18
 
-    let _tokensByOwner, _ECHP_Balance, _fetchSellingMarketItems;
+    let _tokensByOwner, _tokensByOwner2, _ECHP_Balance, _fetchSellingMarketItems;
     _fetchSellingMarketItems = promisify(fetchSellingMarketItems_ => MARKETPLACE_Contract.methods.fetchSellingMarketItems(currentAccount).call(fetchSellingMarketItems_))
     _tokensByOwner = promisify(tokensByOwner_ => ECHPUNKS_NFT_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner_))
+    _tokensByOwner2 = promisify(tokensByOwner_ => ECHPUNKS_NFT2_Contract.methods.tokensByOwner(currentAccount).call(tokensByOwner_))
     _ECHP_Balance = promisify(ECHP_Balance_ => ECHP_Contract.methods.balanceOf(currentAccount).call(ECHP_Balance_))
 
-    Promise.all([_tokensByOwner, _ECHP_Balance, _fetchSellingMarketItems])
-    .then(function ([tokensByOwner, ECHP_Balance, fetchSellingMarketItems]) {
-        console.log(fetchSellingMarketItems)
+    Promise.all([_tokensByOwner,_tokensByOwner2, _ECHP_Balance, _fetchSellingMarketItems])
+    .then(function ([tokensByOwner,tokensByOwner2, ECHP_Balance, fetchSellingMarketItems]) {
+        // console.log(fetchSellingMarketItems)
         // displayMyListedPunks(fetchSellingMarketItems)
         tempListedPunks = fetchSellingMarketItems
 
@@ -190,12 +240,16 @@ async function getAccount() {
         document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance: <br>" + readECHPBalance + "</p>"
 
         myTokensArray = tokensByOwner
+        myTokensArray2 = tokensByOwner2
         
         document.getElementById('buy_echp_div').hidden = false;
 
         // create a card for each token id
         for (i = 0; i < myTokensArray.length; i ++) {
             bestFetch(i)
+        }
+        for (i = 0; i < myTokensArray2.length; i ++) {
+            bestFetch2(i)
         }
     }).then(function () {
     document.getElementById('enableMeta').hidden = true
@@ -204,7 +258,7 @@ async function getAccount() {
 
     showAccount.innerHTML = "<p>My Wallet:<br>" + account.match(/.{1,15}/g)[0] + "...</p>"
 
-    if (network === 3000) { // rinkeby=4  ech=3000
+    if (network === 3000) { // rinkeby=4  ech=4
         showBalance.innerHTML = "<p>My Echelon:<br>" + read.toFixed(5) + "</p>"
         return currentAccount;
     } else {
@@ -218,10 +272,10 @@ async function getAccount() {
 const loadMetadata = () => {
     
     document.getElementById('button_column').hidden = true;
-    document.getElementById('my_echpunks_header').hidden = false;
     // document.getElementById('sale_header').hidden = false;
 
     if (myTokensArray.length > 0) {
+        document.getElementById('my_echpunks_header').hidden = false;
         for(i=0; i<myTokensArray.length; i++) {
             let earings = ""
             let background = ""
@@ -254,14 +308,14 @@ const loadMetadata = () => {
                 "<div id='' class='row justify-content-center'>" +
                     "<div class='col-12 text-center'>" +
                         "<p>Sell this Punk</p>" +
-                        "<input class='w-50 text-center'type='text' value='' id='price_input" + myTokensArray[i] + "' placeholder='ECH Price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
+                        "<input class='w-50 text-center'type='text' value='' id='price_input" + myTokensArray[i] + `A` +"' placeholder='ECH Price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
                         // "<p>Echelon</p>" +
                     "</div>" +
                 "</div>" +
                 // "<div class='row'>" +
                     "<div class='col-12 mb-2 mt-2'>" +
-                        "<button id='' onclick='createListing("+ myTokensArray[i]+")' class='btn btn-primary mr-1'>Sell</button>" +
-                        "<button id='' onclick='approveForSale("+ myTokensArray[i]+")' class='btn btn-primary'>Approve</button>" +
+                        "<button id='' onclick='createListing("+ myTokensArray[i]+", 1, `A` )' class='btn btn-primary mr-1'>Sell</button>" +
+                        "<button id='' onclick='approveForSale("+ myTokensArray[i]+", 1)' class='btn btn-primary'>Approve</button>" +
                     "</div>" +
                     // "<div class='col-6 mb-2'>" +
                     // "</div>" +
@@ -270,7 +324,60 @@ const loadMetadata = () => {
             ).appendTo('#myPunks');
         }
     } else {
-        document.getElementById('myPunks').innerHTML = "You do not own any ECHPunks or your NFT's are on the market"
+        document.getElementById('myPunks').innerHTML = "You do not own any ECHPunks Gen 1 or your NFT's are on the market"
+    }
+    if (myTokensArray2.length > 0) {
+        document.getElementById('my_echpunks_header2').hidden = false;
+        for(i=0; i<myTokensArray2.length; i++) {
+        // console.log(myTokensArray2[i])
+            // let earings = ""
+            // let background = ""
+            // if (MyMetadataArray[i].attributes[0].value === "Background 5") {
+            //     background = "5"
+            // } else if (MyMetadataArray[i].attributes[0].value === "Background 4") {
+            //     background = "4"
+            // } else if (MyMetadataArray[i].attributes[0].value === "Background 3") {
+            //     background = "3"
+            // } else if (MyMetadataArray[i].attributes[0].value === "Background 2") {
+            //     background = "2"
+            // } else if (MyMetadataArray[i].attributes[0].value === "Background 1") {
+            //     background = "1"
+            // } else {
+            //     background = MyMetadataArray[i].attributes[0].value
+            // }
+
+            $(
+            "<div class='col-12 col-sm-4 col-md-3 border border-secondary mt-2'>" +
+                "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/punks2/" + myTokensArray2[i] + ".png'>" +
+                "<p>" + MyMetadataArray2[i].name + "</p>" +
+                // "<p><b>Background:</b> " + MyMetadataArray2[i].attributes[0].value + "<br>" +
+                "<b>Skin:</b> " + MyMetadataArray2[i].attributes[1].value + "<br>" +
+                "<b>Hair/Hat:</b> " + MyMetadataArray2[i].attributes[2].value + "<br>" +
+                "<b>Eyes:</b> " + MyMetadataArray2[i].attributes[3].value + "<br>" +
+                "<b>Mouth:</b> " + MyMetadataArray2[i].attributes[4].value + "<br>" +
+                "<b>Accessory:</b> " + MyMetadataArray2[i].attributes[5].value + "<br>" +
+                "<b>Outfit:</b> " + MyMetadataArray2[i].attributes[6].value + "</p>" +
+                // "<hr>" +
+                // "<div id='' class='row justify-content-center'>" +
+                //     "<div class='col-12 text-center'>" +
+                //         "<p>Sell this Punk</p>" +
+                //         "<input class='w-50 text-center'type='text' value='' id='price_input" + myTokensArray2[i] + `B` + "' placeholder='ECH Price' onkeypress=' return(event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode<= 57' name='itemConsumption'> "+
+                //         "<p>Echelon</p>" +
+                //     "</div>" +
+                // "</div>" +
+                // "<div class='row'>" +
+                    // "<div class='col-12 mb-2 mt-2'>" +
+                    //     "<button id='' onclick='createListing("+ myTokensArray2[i]+", 2, `B`)' class='btn btn-primary mr-1'>Sell</button>" +
+                    //     "<button id='' onclick='approveForSale("+ myTokensArray2[i]+", 2)' class='btn btn-primary'>Approve</button>" +
+                    // "</div>" +
+                    // "<div class='col-6 mb-2'>" +
+                    // "</div>" +
+                // "</div>" +
+            "</div>"
+            ).appendTo('#myPunks2');
+        }
+    } else {
+        document.getElementById('myPunks2').innerHTML = "You do not own any ECHPunks Gen 2"
     }
     displayMyListedPunks()
 }
@@ -283,7 +390,17 @@ async function bestFetch(i) {
         const first = await fetch('./../../assets/data/metadata/' + myTokensArray[i]);
         let json = await first.json(); 
         MyMetadataArray[i] = json
-        console.log(i, MyMetadataArray[i])
+        // console.log(i, MyMetadataArray[i])
+    } catch (e) {
+        console.log('Error!', e);
+    }
+}
+async function bestFetch2(i) {
+    try {
+        const first = await fetch('./../../assets/data/metadata2/' + myTokensArray2[i]);
+        let json = await first.json(); 
+        MyMetadataArray2[i] = json
+        // console.log(i, MyMetadataArray2[i])
     } catch (e) {
         console.log('Error!', e);
     }
@@ -291,8 +408,8 @@ async function bestFetch(i) {
 
 function displayMyListedPunks() {
     for (i = 0; i < tempListedPunks.length; i++) {
-        if (tempListedPunks[i].canceled != true && tempListedPunks[i].sold != true) {
-        
+        if (tempListedPunks[i].canceled && !tempListedPunks[i].sold) {
+            // console.log('not sold, not canceled: ', tempListedPunks[i])
             document.getElementById('my_listed_punks_row').hidden = false;
             myListedPunks.push({
                 "NFTTokenID": tempListedPunks[i].tokenId, 
@@ -301,8 +418,9 @@ function displayMyListedPunks() {
             })
         }
 
-        if (tempListedPunks[i].sold == true) {
+        if (tempListedPunks[i].sold) {
             document.getElementById('my_sold_punks_row').hidden = false;
+            // console.log('sold: ',tempListedPunks[i])
             mySoldPunks.push({
                 "NFTTokenID": tempListedPunks[i].tokenId, 
                 "MARKETPLACEID": tempListedPunks[i].marketItemId, 
@@ -312,17 +430,17 @@ function displayMyListedPunks() {
 
     }
 
-    console.log('mylistedpunks ',myListedPunks)
+    // console.log('mylistedpunks ',myListedPunks)
     if (myListedPunks.length > 0) {
         for(i=0; i<myListedPunks.length; i++) {
-            console.log(myListedPunks[i].tokenId )
+            // console.log(myListedPunks[i].tokenId )
             $(
             "<div class='col-12 col-sm-4 col-md-3 border border-secondary mt-2'>" +
                 "<img style='max-width:100%;max-height:100%;' class='mb-2 mr-2 mt-2' src='./../../assets/images/testpunks/" + myListedPunks[i].NFTTokenID + ".png'>" +
                 "<p>ECHPunk #" + myListedPunks[i].NFTTokenID + "</p>" +   
                 "<p>Listed for " + myListedPunks[i].PRICE / 10 ** 18 + " ECH </p>" +   
                 "<div id=''>" +
-                    "<button id='' onclick='cancelListing("+ myListedPunks[i].MARKETPLACEID +")' class='btn btn-primary mb-2'>Cancel Listing</button>" +
+                    "<button id='' onclick='cancelListing("+ myListedPunks[i].MARKETPLACEID +", 1)' class='btn btn-primary mb-2'>Cancel Listing</button>" +
                 "</div>" +
             "</div>"
             ).appendTo('#myListedPunks');

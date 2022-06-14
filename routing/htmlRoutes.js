@@ -20,5 +20,8 @@ router.get('/stats', (__, res) => {
 router.get('/marketplace', (__, res) => {
     res.sendFile(path.join(__dirname, '/../dist/html/marketplace.html'));
 });
+router.get('/game', (__, res) => {
+    res.sendFile(path.join(__dirname, '/../dist/html/game.html'));
+});
 
 

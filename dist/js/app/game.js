@@ -141,6 +141,7 @@ async function getAccount() {
         const readECHPBalance = parseInt(ECHP_Balance) / 10 ** 9
         document.getElementById('ECHP_Balance').innerHTML = "<p>My ECHP Balance<br>" + readECHPBalance + "</p>"
         console.log(isPlayerOwner)
+        checkIfPlayerIsRegistered(currentAccount)
         if (isInGame != 0) {
                 document.getElementById('join_game').hidden = true
                 myGameNumber = isInGame
@@ -171,10 +172,7 @@ async function getAccount() {
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const getImage = (currentMint) => {
-    $('#image_display').attr("src", "./../../assets/images/testpunks/" + (parseInt(currentMint)+1).toString() + ".png")
-    return
-}
+
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -428,6 +426,7 @@ function enableChecks() {
 let currentAttackAndDefends = {}
 let currentGameStats = {}
 let gameMove = 1
+let imagesSet = false
 function updateLiveGame(gameNumber) {
     setTimeout(() => {
         
@@ -445,27 +444,46 @@ function updateLiveGame(gameNumber) {
                     document.getElementById('previous_round').innerHTML = games.gameTurn - 1
                 }
                 document.getElementById('current_round').innerHTML = games.gameTurn
-            // console.log(typeof(gameMoves))
+
+                if (games.gameTurn % 2 == 0) {
+                    if (games.gameTurn == 0) {
+                        document.getElementById('current_attacker').innerHTML = "1"
+                    } else {
+                        document.getElementById('current_attacker').innerHTML = "2"
+                    }
+                } else {
+                    document.getElementById('current_attacker').innerHTML = "1"
+                }
+
                 if (winner != "0x0000000000000000000000000000000000000000") {
                     document.getElementById('winner_div').hidden = false
                     if (winner.toUpperCase() == currentAccount.toUpperCase()) {
                         document.getElementById('withdraw_winner_button').hidden = false
                         document.getElementById('loser_exit_button').hidden = true
-                        
                     } else {
                         document.getElementById('withdraw_winner_button').hidden = true
                         document.getElementById('loser_exit_button').hidden = false
-
                     }
                 } else {
                     document.getElementById('winner_div').hidden = true
                 }
+
                 if (games.player1.toUpperCase() == currentAccount.toUpperCase()) {
                     document.getElementById('my_player_number').innerHTML = "1"
                 }
+
                 if (games.player2.toUpperCase() == currentAccount.toUpperCase()) {
                     document.getElementById('my_player_number').innerHTML = "2"
                 }
+                if (gameNumber != 0) {
+                    document.getElementById('p1_address').innerHTML = "<a href=''>" + games.player1.match(/.{1,6}/g)[0] + "...</a>"
+                    document.getElementById('p2_address').innerHTML = "<a href=''>" + games.player2.match(/.{1,6}/g)[0] + "...</a>"
+                } else {
+                    document.getElementById('p1_address').innerHTML = "&nbsp;"
+                    document.getElementById('p2_address').innerHTML = "&nbsp;"
+                }
+            
+                fetchImages(games.player1, games.player2)
 
                 if (games.gameTurn != gameMove) {
                     console.log('previous round score calculated, displaying in previous round section')
@@ -552,8 +570,10 @@ function updateLiveGame(gameNumber) {
                     } else {
                         document.getElementById('p2_defends_nipple').innerHTML = "&#10003;"
                     }
+
                     let player1Deductions = 0
                     let player2Deductions = 0
+                    
                     //score
                         // player 1 defends hair, player 2 attacks hair
                     if (JSON.parse(gameMoves[1][0]) == 1 && JSON.parse(gameMoves[2][0]) == 2) {
@@ -612,8 +632,9 @@ function updateLiveGame(gameNumber) {
                     document.getElementById('player2_point_deduction').innerHTML = player2Deductions
                 }
                 document.getElementById('gameIsLive').innerHTML = games.gameIsLive
-                document.getElementById('player1Hp').innerHTML = games.player1Hp
-                document.getElementById('player2Hp').innerHTML = games.player2Hp
+                document.getElementById('player1Hp').innerHTML = games.player1Hp + " HP"
+                document.getElementById('player2Hp').innerHTML = games.player2Hp + " HP"
+
                 document.getElementById('winner').innerHTML = winner
                 // if player 1
                 if (games.player1.toUpperCase() == currentAccount.toUpperCase()) {
@@ -673,6 +694,11 @@ function updateLiveGame(gameNumber) {
                         document.getElementById('winner_div').hidden = false
                         // withdraw from game button?
                     }
+                    if (games.player2 = "0x0000000000000000000000000000000000000000") {
+                    disableChecks()
+                    document.getElementById('commit_button').hidden = true
+                    document.getElementById('live_feed').innerHTML = "WAITING FOR PLAYER 2 TO JOIN."
+                }
                 }
                 if (games.player2.toUpperCase() == currentAccount.toUpperCase()) {
                     if (games.isPlayer1Committed == false && games.isPlayer2Committed == false &&
@@ -840,4 +866,66 @@ function setNFT() {
             document.getElementById('not_your_nft').innerHTML = "You do not own this NFT"
         }
     })
+}
+
+function fetchImages(player1, player2) {
+    if (imagesSet == false) {
+        let _p1, _p2
+        _p1 = promisify(p1_ => GAME_Contract.methods.players(player1).call(p1_))
+        _p2 = promisify(p2_ => GAME_Contract.methods.players(player2).call(p2_))
+
+        Promise.all([_p1, _p2])
+        .then(function ([p1, p2]) {
+            console.log(p1, p2)
+            //p1
+            if (p1.currentContract == "0xf87c07700ad109b54d52D226Eb56FfBB29060c71") { // gen 1
+                document.getElementById("p1_image").src = "./../../assets/images/testpunks/" + p1.currentNFTNumber + ".png"
+            } else if (p1.currentContract == "0xf87c07700ad109b54d52D226Eb56FfBB29060c71") { // gen 2
+                document.getElementById("p1_image").src = "./../../assets/images/punks2/" + p1.currentNFTNumber + ".png"
+            } else { // no player
+                document.getElementById("p1_image").src = "./../../assets/images/nakedpunk.png"
+            }
+                document.getElementById("player1_wins").innerHTML = p1.totalWins + " Wins"
+                document.getElementById("player1_losses").innerHTML = p1.totalLosses + " Losses"
+                document.getElementById("player2_wins").innerHTML = p2.totalWins + " Wins"
+                document.getElementById("player2_losses").innerHTML = p2.totalLosses + " Losses "
+            
+            //p2
+            if (p2.currentContract == "0xf87c07700ad109b54d52D226Eb56FfBB29060c71") { // gen 1
+                document.getElementById("p2_image").src = "./../../assets/images/testpunks/" + p2.currentNFTNumber + ".png"
+            } else if (p2.currentContract == "0xf87c07700ad109b54d52D226Eb56FfBB29060c71") { // gen 2
+                document.getElementById("p2_image").src = "./../../assets/images/punks2/" + p2.currentNFTNumber + ".png"
+            } else { // no player
+                document.getElementById("p2_image").src = "./../../assets/images/nakedpunk.png"
+            }
+            return;
+        })
+        imagesSet = true
+    }
+}
+
+
+const getImage = (currentMint) => {
+    $('#image_display').attr("src", "./../../assets/images/testpunks/" + (parseInt(currentMint)+1).toString() + ".png")
+    return
+}
+
+function checkIfPlayerIsRegistered(address) {
+     let _player
+        _player = promisify(player_ => GAME_Contract.methods.players(address).call(player_))
+
+        Promise.all([_player])
+        .then(function ([player]) {
+            console.log(player.isPlayable)
+            if(player.isPlayable == true) {
+                document.getElementById('i_am_registered').hidden = false
+                document.getElementById('im_not_registered').hidden = true
+            } else {
+                document.getElementById('i_am_registered').hidden = true
+                document.getElementById('im_not_registered').hidden = false
+            }
+            //p1
+            
+            return;
+        })
 }

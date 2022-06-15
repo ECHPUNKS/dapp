@@ -232,6 +232,7 @@
                                 <div class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
                                     <div class="card-body text-center pt-3" id="">
                                         <h4>Current Round #<span id="current_round"></span></h4>
+                                        <h6>Player <span id="current_attacker"></span> attacks first</h6>
                                         <!-- <h6>CURRENTLY MINTING</h6> -->
                                         <!-- <h2 class="mt-0" id="current_mint_card">ECHPUNK #<span id="current_mint_number"></span></h2> -->
                                         <button hidden class="btn btn-primary" id="join_game" onclick="joinAGame()">Join Game</button>
@@ -295,16 +296,37 @@
                                 <div class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
                                     <div class="card-body text-center pt-3" id="">
                                         <h4>Score</h4>
-                                        <div class="row">
+                                        <div class="row text-center">
                                             <div class="col-12">
                                                 <table class="w-100 mb-2 border border-light">
                                                     <tr>
-                                                        <th>Player 1</th>
-                                                        <th>Player 2</th>
+                                                        <th>
+                                                            
+                                                            Player 1
+                                                        </th>
+                                                        <th>
+                                                            Player 2
+                                                        </th>
+                                                    </tr>
+                                                    <tr class="w-100" >
+                                                        <td><span id="p1_address">&nbsp;</span></td>
+                                                        <td><span id="p2_address">&nbsp;</span></td>
+                                                    </tr>
+                                                    <tr class="w-100" >
+                                                        <td><img id="p1_image" src="" class="w-50 mb-2"></td>
+                                                        <td><img id="p2_image" src="" class="w-50 mb-2"></td>
                                                     </tr>
                                                     <tr class="w-100 border border-light">
                                                         <td><span><p id="player1Hp">&nbsp;</p></span></td>
                                                         <td><span><p id="player2Hp">&nbsp;</p></span></td>
+                                                    </tr>
+                                                    <tr class="w-100 border border-light">
+                                                        <td><span><p id="player1_wins">&nbsp;</p></span></td>
+                                                        <td><span><p id="player2_wins">&nbsp;</p></span></td>
+                                                    </tr>
+                                                    <tr class="w-100 border border-light">
+                                                        <td><span><p id="player1_losses">&nbsp;</p></span></td>
+                                                        <td><span><p id="player2_losses">&nbsp;</p></span></td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -333,6 +355,8 @@
                                 <div class="card bg-secondary rounded border-dark text-white mb-2" id="nft_info_card">
                                     <div class="card-body text-center pt-3" id="">
                                         <h4>Set my NFT</h4>
+                                        <h6 hidden id="i_am_registered" style="color: green;">I have a registered NFT</h6>
+                                        <h6 hidden id="im_not_registered" style="color:red;">I have not registered a NFT</h6>
                                         <div class="row">
                                             <div class="col-12">
                                                 <label for="nft_gen">Select Gen 1 or Gen 2 NFT's:</label>

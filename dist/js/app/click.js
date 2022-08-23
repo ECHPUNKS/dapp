@@ -88,7 +88,7 @@ ethereumButton.addEventListener('click', () => {
     document.getElementById('click_button_section').hidden = false
     // console.log('getting account')
     // totalSupplies()
-    console.log("getting account")
+    // console.log("getting account")
     getAccount()
 })
 
@@ -127,6 +127,7 @@ async function getAccount() {
         // console.log(timeLeftUntilNextClick)
         // console.log(scores, "scores")
         // console.log(clicksByAddress.clicks_)
+        console.log("getting account")
         if (timer == 0) {
             timeLeftInGame(timeLeft)
         }
@@ -228,3 +229,19 @@ function timeLeftForPlayer(time) {
     }, "1000")
 }
 
+let canRefresh = true;
+function refreshTop() {
+    document.getElementById("refresh_button").disabled = true
+    var element = document.getElementById("refresh_button");
+    element.classList.remove("btn-primary");
+    element.classList.add("btn-secondary")
+    getAccount()
+    canRefresh = false;
+    setTimeout(() => {
+        document.getElementById("refresh_button").disabled = false
+        var element = document.getElementById("refresh_button");
+        element.classList.remove("btn-secondary");
+        element.classList.add("btn-primary")
+        canRefresh = true; 
+    }, "60000")
+}

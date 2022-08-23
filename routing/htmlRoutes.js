@@ -23,5 +23,8 @@ router.get('/marketplace', (__, res) => {
 router.get('/game', (__, res) => {
     res.sendFile(path.join(__dirname, '/../dist/html/game.html'));
 });
+router.get('/click', (__, res) => {
+    res.sendFile(path.join(__dirname, '/../dist/html/click.html'));
+});
 
 

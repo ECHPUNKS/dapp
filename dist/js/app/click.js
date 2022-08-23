@@ -231,15 +231,14 @@ function timeLeftForPlayer(time) {
 
 let canRefresh = true;
 function refreshTop() {
-    document.getElementById("refresh_button").disabled = true
-    var element = document.getElementById("refresh_button");
+    const element = document.getElementById("refresh_button");
+    element.disabled = true
     element.classList.remove("btn-primary");
     element.classList.add("btn-secondary")
     getAccount()
     canRefresh = false;
     setTimeout(() => {
-        document.getElementById("refresh_button").disabled = false
-        var element = document.getElementById("refresh_button");
+        element.disabled = false
         element.classList.remove("btn-secondary");
         element.classList.add("btn-primary")
         canRefresh = true; 

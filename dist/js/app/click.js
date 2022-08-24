@@ -207,6 +207,7 @@ function timeLeftForPlayer(time) {
         if (time != 0) {
             playerTimer = parseFloat(time)
             document.getElementById("can_click_now").hidden = true
+            document.getElementById("can_click_now").innerHTML = "You can click now!"
             document.getElementById("time_until_p").hidden = false
             clickButton.disabled = true
             clickButton.classList.remove("btn-primary");
@@ -214,6 +215,7 @@ function timeLeftForPlayer(time) {
         } 
         if (time == 0) {
             document.getElementById("can_click_now").hidden = false
+            document.getElementById("can_click_now").innerHTML = "You can click now!"
             document.getElementById("time_until_p").hidden = true
             clickButton.disabled = false
             clickButton.classList.remove("btn-secondary");

@@ -26,5 +26,8 @@ router.get('/game', (__, res) => {
 router.get('/click', (__, res) => {
     res.sendFile(path.join(__dirname, '/../dist/html/click.html'));
 });
+router.get('/place', (__, res) => {
+    res.sendFile(path.join(__dirname, '/../dist/html/place.html'));
+});
 
 

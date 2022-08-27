@@ -231,16 +231,16 @@ function timeLeftForPlayer(time) {
 let canRefresh = true;
 
 function refreshTop() {
-    const element = document.getElementById("refresh_button");
-    element.disabled = true
-    element.classList.remove("btn-primary");
-    element.classList.add("btn-secondary")
+    const refreshButton = document.getElementById("refresh_button");
+    refreshButton.disabled = true
+    refreshButton.classList.remove("btn-primary");
+    refreshButton.classList.add("btn-secondary")
     getAccount()
     canRefresh = false;
     setTimeout(() => {
-        element.disabled = false
-        element.classList.remove("btn-secondary");
-        element.classList.add("btn-primary")
+        refreshButton.disabled = false
+        refreshButton.classList.remove("btn-secondary");
+        refreshButton.classList.add("btn-primary")
         canRefresh = true; 
     }, "60000")
 }
